@@ -1,4 +1,4 @@
-// Dokonapp.js - полная версия со всеми исправлениями
+// Dokonapp.js - полная версия со всеми исправлениями и адаптивными таблицами (добавлены data-label)
 const API_URL = window.location.origin;
 const API_BASE = API_URL + '/api';
 
@@ -588,12 +588,23 @@ function renderNasiyaClientsTable() {
         );
     }
 
-    clients.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+    clients.sort((a, b) => {
+        if (a.remainingDebt <= 0 && b.remainingDebt > 0) return 1;
+        if (a.remainingDebt > 0 && b.remainingDebt <= 0) return -1;
+        if (!a.nextPaymentDate && b.nextPaymentDate) return 1;
+        if (a.nextPaymentDate && !b.nextPaymentDate) return -1;
+        if (a.nextPaymentDate && b.nextPaymentDate) {
+            const dateA = new Date(a.nextPaymentDate);
+            const dateB = new Date(b.nextPaymentDate);
+            return dateA - dateB;
+        }
+        return 0;
+    });
 
     if (clients.length === 0) {
         container.innerHTML = `
             <tr>
-                <td colspan="9" class="text-center py-4 text-muted">
+                <td colspan="10" class="text-center py-4 text-muted">
                     <i class="fas fa-users fa-2x mb-3 d-block"></i>
                     ${nasiyaSearchTerm ? 'Qidiruv bo\'yicha mijoz topilmadi' : 'Hozircha mijozlar yo\'q'}
                 </td>
@@ -603,6 +614,9 @@ function renderNasiyaClientsTable() {
     }
 
     const rows = clients.map((client, index) => {
+        const clientSales = DokonApp.nasiyaData.sales.filter(s => s.clientId === client.id);
+        const productsCount = clientSales.reduce((count, sale) => count + (sale.items?.length || 0), 0);
+        
         const lastPayment = DokonApp.nasiyaData.payments
             .filter(p => p.clientId === client.id)
             .sort((a, b) => new Date(b.paymentDate) - new Date(a.paymentDate))[0];
@@ -610,29 +624,30 @@ function renderNasiyaClientsTable() {
         const lastPaymentDate = lastPayment ? new Date(lastPayment.paymentDate).toLocaleDateString('uz-UZ') : 'Yo\'q';
         
         return `
-            <tr>
-                <td>${index + 1}</td>
-                <td>
+            <tr ${client.remainingDebt > 0 && client.nextPaymentDate ? `class="${getPaymentRowClass(client.nextPaymentDate, client.remainingDebt)}"` : ''}>
+                <td data-label="#">${index + 1}</td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(client.name)}</strong>
                     ${client.phone ? `<br><small class="text-muted">${escapeHtml(client.phone)}</small>` : ''}
+                    ${productsCount > 0 ? `<br><small class="text-info">${productsCount} ta mahsulot</small>` : ''}
                 </td>
-                <td>${escapeHtml(client.phone || '-')}</td>
-                <td class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td>
+                <td data-label="Telefon">${escapeHtml(client.phone || '-')}</td>
+                <td data-label="Jami qarz" class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="To'langan" class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Qoldiq">
                     <span class="badge ${client.remainingDebt > 0 ? 'bg-danger' : 'bg-success'}">
                         ${(client.remainingDebt || 0).toLocaleString('uz-UZ')} UZS
                     </span>
                 </td>
-                <td>
+                <td data-label="Holati">
                     <span class="badge ${client.status === 'active' ? 'bg-success' : 'bg-danger'}">
                         ${client.status === 'active' ? 'Faol' : 'Nofaol'}
                     </span>
                 </td>
-                <td>${lastPaymentDate}</td>
-                <td>
-                    <button class="btn btn-sm btn-info me-1 mb-1" onclick="showNasiyaClientDetails('${client.id}')">
-                        <i class="fas fa-eye"></i>
+                <td data-label="Oxirgi to'lov">${lastPaymentDate}</td>
+                <td data-label="Harakatlar">
+                    <button class="btn btn-sm btn-info me-1 mb-1" onclick="showNasiyaClientDetails('${client.id}')" title="Mahsulotlar tarixi bilan ko'rish">
+                        <i class="fas fa-history"></i>
                     </button>
                     <button class="btn btn-sm btn-success me-1 mb-1" onclick="showNasiyaPaymentModal('${client.id}')">
                         <i class="fas fa-money-bill-wave"></i>
@@ -1991,15 +2006,13 @@ function renderSalesTable() {
 
         return `
             <tr>
-                <td><small>${dateStr}</small></td>
-                <td><strong>${sale.productName || 'Noma\'lum'}</strong></td>
-                <td><span class="badge bg-primary">Akil Box</span></td>
-                <td><span class="badge bg-secondary">${sale.quantity || 0} dona</span></td>
-                <td>${(sale.price || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td><strong>${(sale.total || 0).toLocaleString('uz-UZ')} UZS</strong></td>
-                <td class="${sale.profit > 0 ? 'text-success' : 'text-danger'}">
-                    <strong>${(sale.profit || 0).toLocaleString('uz-UZ')} UZS</strong>
-                </td>
+                <td data-label="Sana"><small>${dateStr}</small></td>
+                <td data-label="Mahsulot"><strong>${escapeHtml(sale.productName || 'Noma\'lum')}</strong></td>
+                <td data-label="Turi"><span class="badge bg-primary">Akil Box</span></td>
+                <td data-label="Miqdor"><span class="badge bg-secondary">${sale.quantity || 0} dona</span></td>
+                <td data-label="Narx">${(sale.price || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Jami"><strong>${(sale.total || 0).toLocaleString('uz-UZ')} UZS</strong></td>
+                <td data-label="Foyda" class="${sale.profit > 0 ? 'text-success' : 'text-danger'}"><strong>${(sale.profit || 0).toLocaleString('uz-UZ')} UZS</strong></td>
             </tr>
         `;
     }).join('');
@@ -2020,25 +2033,17 @@ function renderUsersTable() {
     
     const rows = users.map(user => `
         <tr>
-            <td>${user.id?.substring(0, 8) || 'N/A'}...</td>
-            <td>${user.username}</td>
-            <td>${user.fullName || '-'}</td>
-            <td><span class="role-badge ${getRoleClass(user.role)}">${getRoleText(user.role)}</span></td>
-            <td>${user.email || '-'}</td>
-            <td>${user.phone || '-'}</td>
-            <td>
-                <span class="badge ${user.status === 'active' ? 'bg-success' : 'bg-danger'}">
-                    ${user.status === 'active' ? 'Faol' : 'Nofaol'}
-                </span>
-            </td>
-            <td>${user.createdAt ? new Date(user.createdAt).toLocaleDateString('uz-UZ') : '-'}</td>
-            <td>
-                <button class="btn btn-sm btn-primary" onclick="editUser('${user.id}')">
-                    <i class="fas fa-edit"></i>
-                </button>
-                <button class="btn btn-sm btn-danger" onclick="deleteUser('${user.id}')">
-                    <i class="fas fa-trash"></i>
-                </button>
+            <td data-label="ID">${user.id?.substring(0, 8) || 'N/A'}...</td>
+            <td data-label="Foydalanuvchi nomi">${escapeHtml(user.username)}</td>
+            <td data-label="To'liq ismi">${escapeHtml(user.fullName || '-')}</td>
+            <td data-label="Roli"><span class="role-badge ${getRoleClass(user.role)}">${getRoleText(user.role)}</span></td>
+            <td data-label="Email">${escapeHtml(user.email || '-')}</td>
+            <td data-label="Telefon">${escapeHtml(user.phone || '-')}</td>
+            <td data-label="Holati"><span class="badge ${user.status === 'active' ? 'bg-success' : 'bg-danger'}">${user.status === 'active' ? 'Faol' : 'Nofaol'}</span></td>
+            <td data-label="Yaratilgan">${user.createdAt ? new Date(user.createdAt).toLocaleDateString('uz-UZ') : '-'}</td>
+            <td data-label="Amallar">
+                <button class="btn btn-sm btn-primary" onclick="editUser('${user.id}')"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-sm btn-danger" onclick="deleteUser('${user.id}')"><i class="fas fa-trash"></i></button>
             </td>
         </tr>
     `).join('');
@@ -2704,7 +2709,7 @@ function renderNasiyaRemindersTable() {
         console.error('Nasiya data or reminders not loaded');
         container.innerHTML = `
             <tr>
-                <td colspan="6" class="text-center py-4 text-muted">
+                <td colspan="9" class="text-center py-4 text-muted">
                     <i class="fas fa-exclamation-triangle fa-2x mb-3 d-block"></i>
                     Ma'lumotlar yuklanmadi
                 </td>
@@ -2757,28 +2762,26 @@ function renderNasiyaRemindersTable() {
         
         return `
             <tr>
-                <td>
-                    <input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}">
-                </td>
-                <td>
+                <td data-label="Tanlash"><input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}"></td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(clientName)}</strong>
                     <br><small class="text-muted">${escapeHtml(clientPhone)}</small>
                 </td>
-                <td>${escapeHtml(clientPhone)}</td>
-                <td class="text-primary fw-bold">
+                <td data-label="Telefon">${escapeHtml(clientPhone)}</td>
+                <td data-label="To'lov sanasi" class="text-primary fw-bold">
                     ${reminderDate.toLocaleDateString('uz-UZ')}
                 </td>
-                <td class="fw-bold text-success">
+                <td data-label="Miqdor" class="fw-bold text-success">
                     ${(reminder.amount || 0).toLocaleString('uz-UZ')} UZS
                 </td>
-                <td class="text-danger">
+                <td data-label="Qoldiq" class="text-danger">
                     ${remainingDebt.toLocaleString('uz-UZ')} UZS
                 </td>
-                <td>
+                <td data-label="Holati">
                     <span class="badge ${statusClass}">${status}</span>
                 </td>
-                <td>${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
-                <td>
+                <td data-label="Eslatma">${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
+                <td data-label="Harakatlar">
                     <button class="btn btn-sm btn-success me-1" onclick="sendSingleReminder('${reminder.id}')" 
                             title="yuborish">
                         <i class="fas fa-paper-plane"></i>
@@ -4437,7 +4440,7 @@ function renderNasiyaClientsTable() {
     if (!container) return;
     
     let clients = DokonApp.nasiyaData.clients;
-    
+
     if (nasiyaSearchTerm) {
         clients = clients.filter(client => 
             client.name.toLowerCase().includes(nasiyaSearchTerm) ||
@@ -4445,7 +4448,7 @@ function renderNasiyaClientsTable() {
             (client.address && client.address.toLowerCase().includes(nasiyaSearchTerm))
         );
     }
-    
+
     clients.sort((a, b) => {
         if (a.remainingDebt <= 0 && b.remainingDebt > 0) return 1;
         if (a.remainingDebt > 0 && b.remainingDebt <= 0) return -1;
@@ -4460,7 +4463,7 @@ function renderNasiyaClientsTable() {
         
         return 0;
     });
-    
+
     if (clients.length === 0) {
         container.innerHTML = `
             <tr>
@@ -4472,7 +4475,7 @@ function renderNasiyaClientsTable() {
         `;
         return;
     }
-    
+
     const rows = clients.map((client, index) => {
         const clientSales = DokonApp.nasiyaData.sales.filter(s => s.clientId === client.id);
         const productsCount = clientSales.reduce((count, sale) => count + (sale.items?.length || 0), 0);
@@ -4485,30 +4488,27 @@ function renderNasiyaClientsTable() {
         
         return `
             <tr ${client.remainingDebt > 0 && client.nextPaymentDate ? `class="${getPaymentRowClass(client.nextPaymentDate, client.remainingDebt)}"` : ''}>
-                <td>${index + 1}</td>
-                <td>
+                <td data-label="#">${index + 1}</td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(client.name)}</strong>
                     ${client.phone ? `<br><small class="text-muted">${escapeHtml(client.phone)}</small>` : ''}
                     ${productsCount > 0 ? `<br><small class="text-info">${productsCount} ta mahsulot</small>` : ''}
                 </td>
-                <td>${escapeHtml(client.phone || '-')}</td>
-                <td class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td>
+                <td data-label="Telefon">${escapeHtml(client.phone || '-')}</td>
+                <td data-label="Jami qarz" class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="To'langan" class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Qoldiq">
                     <span class="badge ${client.remainingDebt > 0 ? 'bg-danger' : 'bg-success'}">
                         ${(client.remainingDebt || 0).toLocaleString('uz-UZ')} UZS
                     </span>
                 </td>
-                <td>
+                <td data-label="Holati">
                     <span class="badge ${client.status === 'active' ? 'bg-success' : 'bg-danger'}">
                         ${client.status === 'active' ? 'Faol' : 'Nofaol'}
                     </span>
                 </td>
-                <td>${lastPaymentDate}</td>
-                <td>
-                    ${formatPaymentDate(client.nextPaymentDate, client.remainingDebt || 0)}
-                </td>
-                <td>
+                <td data-label="Oxirgi to'lov">${lastPaymentDate}</td>
+                <td data-label="Harakatlar">
                     <button class="btn btn-sm btn-info me-1 mb-1" onclick="showNasiyaClientDetails('${client.id}')" 
                             title="Mahsulotlar tarixi bilan ko'rish">
                         <i class="fas fa-history"></i>
@@ -5098,7 +5098,7 @@ function renderNasiyaClientsTable() {
     if (!container) return;
     
     let clients = DokonApp.nasiyaData.clients;
-    
+
     if (nasiyaSearchTerm) {
         clients = clients.filter(client => 
             client.name.toLowerCase().includes(nasiyaSearchTerm) ||
@@ -5106,9 +5106,9 @@ function renderNasiyaClientsTable() {
             (client.address && client.address.toLowerCase().includes(nasiyaSearchTerm))
         );
     }
-    
+
     clients.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
-    
+
     if (clients.length === 0) {
         container.innerHTML = `
             <tr>
@@ -5120,7 +5120,7 @@ function renderNasiyaClientsTable() {
         `;
         return;
     }
-    
+
     const rows = clients.map((client, index) => {
         const clientSales = DokonApp.nasiyaData.sales.filter(s => s.clientId === client.id);
         const productsCount = clientSales.reduce((count, sale) => count + (sale.items?.length || 0), 0);
@@ -5133,27 +5133,27 @@ function renderNasiyaClientsTable() {
         
         return `
             <tr>
-                <td>${index + 1}</td>
-                <td>
+                <td data-label="#">${index + 1}</td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(client.name)}</strong>
                     ${client.phone ? `<br><small class="text-muted">${escapeHtml(client.phone)}</small>` : ''}
                     ${productsCount > 0 ? `<br><small class="text-info">${productsCount} ta mahsulot</small>` : ''}
                 </td>
-                <td>${escapeHtml(client.phone || '-')}</td>
-                <td class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td>
+                <td data-label="Telefon">${escapeHtml(client.phone || '-')}</td>
+                <td data-label="Jami qarz" class="text-danger fw-bold">${(client.totalDebt || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="To'langan" class="text-success">${(client.paidAmount || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Qoldiq">
                     <span class="badge ${client.remainingDebt > 0 ? 'bg-danger' : 'bg-success'}">
                         ${(client.remainingDebt || 0).toLocaleString('uz-UZ')} UZS
                     </span>
                 </td>
-                <td>
+                <td data-label="Holati">
                     <span class="badge ${client.status === 'active' ? 'bg-success' : 'bg-danger'}">
                         ${client.status === 'active' ? 'Faol' : 'Nofaol'}
                     </span>
                 </td>
-                <td>${lastPaymentDate}</td>
-                <td>
+                <td data-label="Oxirgi to'lov">${lastPaymentDate}</td>
+                <td data-label="Harakatlar">
                     <button class="btn btn-sm btn-info me-1 mb-1" onclick="showNasiyaClientDetails('${client.id}')" 
                             title="Mahsulotlar tarixi bilan ko'rish">
                         <i class="fas fa-history"></i>
@@ -5317,28 +5317,18 @@ function showAllReminders() {
         
         return `
             <tr>
-                <td>
-                    <input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}">
-                </td>
-                <td>
+                <td data-label="Tanlash"><input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}"></td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(clientName)}</strong>
                     <br><small class="text-muted">${escapeHtml(clientPhone)}</small>
                 </td>
-                <td>${escapeHtml(clientPhone)}</td>
-                <td>${new Date(reminder.reminderDate).toLocaleDateString('uz-UZ')}</td>
-                <td class="fw-bold text-success">
-                    ${(reminder.amount || 0).toLocaleString('uz-UZ')} UZS
-                </td>
-                <td class="text-danger">
-                    ${client ? (client.remainingDebt || 0).toLocaleString('uz-UZ') : 0} UZS
-                </td>
-                <td>
-                    <span class="badge ${reminder.completed ? 'bg-success' : 'bg-warning'}">
-                        ${reminder.completed ? 'Yuborilgan' : 'Kutilmoqda'}
-                    </span>
-                </td>
-                <td>${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
-                <td>
+                <td data-label="Telefon">${escapeHtml(clientPhone)}</td>
+                <td data-label="To'lov sanasi">${new Date(reminder.reminderDate).toLocaleDateString('uz-UZ')}</td>
+                <td data-label="Miqdor" class="fw-bold text-success">${(reminder.amount || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Qoldiq" class="text-danger">${client ? (client.remainingDebt || 0).toLocaleString('uz-UZ') : 0} UZS</td>
+                <td data-label="Holati"><span class="badge ${reminder.completed ? 'bg-success' : 'bg-warning'}">${reminder.completed ? 'Yuborilgan' : 'Kutilmoqda'}</span></td>
+                <td data-label="Eslatma">${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
+                <td data-label="Harakatlar">
                     <button class="btn btn-sm btn-success me-1" onclick="sendSingleReminder('${reminder.id}')">
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -5376,28 +5366,18 @@ function renderFilteredReminders(reminders) {
         
         return `
             <tr>
-                <td>
-                    <input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}">
-                </td>
-                <td>
+                <td data-label="Tanlash"><input type="checkbox" class="reminder-checkbox" data-id="${reminder.id}"></td>
+                <td data-label="Mijoz">
                     <strong>${escapeHtml(clientName)}</strong>
                     <br><small class="text-muted">${escapeHtml(clientPhone)}</small>
                 </td>
-                <td>${escapeHtml(clientPhone)}</td>
-                <td>${new Date(reminder.reminderDate).toLocaleDateString('uz-UZ')}</td>
-                <td class="fw-bold text-success">
-                    ${(reminder.amount || 0).toLocaleString('uz-UZ')} UZS
-                </td>
-                <td class="text-danger">
-                    ${client ? (client.remainingDebt || 0).toLocaleString('uz-UZ') : 0} UZS
-                </td>
-                <td>
-                    <span class="badge ${reminder.completed ? 'bg-success' : 'bg-warning'}">
-                        ${reminder.completed ? 'Yuborilgan' : 'Kutilmoqda'}
-                    </span>
-                </td>
-                <td>${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
-                <td>
+                <td data-label="Telefon">${escapeHtml(clientPhone)}</td>
+                <td data-label="To'lov sanasi">${new Date(reminder.reminderDate).toLocaleDateString('uz-UZ')}</td>
+                <td data-label="Miqdor" class="fw-bold text-success">${(reminder.amount || 0).toLocaleString('uz-UZ')} UZS</td>
+                <td data-label="Qoldiq" class="text-danger">${client ? (client.remainingDebt || 0).toLocaleString('uz-UZ') : 0} UZS</td>
+                <td data-label="Holati"><span class="badge ${reminder.completed ? 'bg-success' : 'bg-warning'}">${reminder.completed ? 'Yuborilgan' : 'Kutilmoqda'}</span></td>
+                <td data-label="Eslatma">${escapeHtml(reminder.description) || 'To\'lov eslatmasi'}</td>
+                <td data-label="Harakatlar">
                     <button class="btn btn-sm btn-success me-1" onclick="sendSingleReminder('${reminder.id}')">
                         <i class="fas fa-paper-plane"></i>
                     </button>
