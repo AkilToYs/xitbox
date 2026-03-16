@@ -1,0 +1,6068 @@
+[
+  {
+    "_id": {
+      "$oid": "698daffbb63756108b3ac9b0"
+    },
+    "id": "3c322c36-4f6e-4363-934b-78c40aff9b1b",
+    "name": "Go'fra shashka",
+    "article": "ASH-002",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2100,
+    "price": 2200,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb945966d852a76673"
+    },
+    "id": "f00c9723-7575-46fe-89e3-543ae6b25cf3",
+    "name": "Go‘fra shaxmat",
+    "article": "ASH-003",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 5000,
+    "price": 0,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb01c86e00b2304103"
+    },
+    "id": "14c9b02e-7bde-403a-a124-09bde117b12d",
+    "name": "Faner shashka 28 kesilgan",
+    "article": "ASH-009",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7400,
+    "price": 8000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbba6e4f4633a4769b"
+    },
+    "id": "0fd36a1a-8c86-4dd0-8690-475204d7ad62",
+    "name": "Faner shaxmat 28 kesilgan",
+    "article": "ASH-010",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 9300,
+    "price": 10000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd09a2712ebbf6096"
+    },
+    "id": "ab971c08-ff67-4c12-97ac-fea77bb719e6",
+    "name": "Faner shashka 28",
+    "article": "ASH-011",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 6900,
+    "price": 7500,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb9b7c750a9562224"
+    },
+    "id": "3d5b1ed0-2d3e-4a6b-b08f-ebd55191adcb",
+    "name": "Plastmassa shaxmat 20 x 20",
+    "article": "ASH-004",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8500,
+    "price": 10000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe04dbe8f7152ca49"
+    },
+    "id": "22f2963f-ba6e-4a8d-b819-6af7f44ca6d7",
+    "name": "Plastmassa 2 in 1 23 x 23",
+    "article": "ASH-005",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 9500,
+    "price": 11000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb750f1a84857ea4ca"
+    },
+    "id": "caf6da3b-423a-4e86-b6bf-a67a1cf82f96",
+    "name": "Plastmassa 2 in 1 26 x 26",
+    "article": "ASH-006",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 11400,
+    "price": 12000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe3064dfc844fec3f"
+    },
+    "id": "1b0de30d-8ec9-45aa-8809-668eb580b0b4",
+    "name": "Plastmassa shaxmat 30 x 30",
+    "article": "ASH-007",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 12200,
+    "price": 13000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb203373283e6bff86"
+    },
+    "id": "e7b747db-8e0f-4a24-9966-600e024a9ada",
+    "name": "Taxta idish 2 in 1 23 x 23",
+    "article": "ASH-013",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 15900,
+    "price": 17000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfddfeae0449ba8cd"
+    },
+    "id": "98f0d134-879b-4b56-b9f0-5ca864fbcc52",
+    "name": "Taxta idish 2 in 1 28 x 28",
+    "article": "ASH-014",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22700,
+    "price": 24000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9850ad87cc3bbea0"
+    },
+    "id": "c6f546d1-00a2-4457-acce-6bd633400322",
+    "name": "Taxta idish 2 in 1 33 x 33",
+    "article": "ASH-015",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 32100,
+    "price": 34000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb88ce8694df985a18"
+    },
+    "id": "674c1b16-d1d0-4628-8be1-d99796c841d8",
+    "name": "Taxta idish 2 in 1 38 x 38",
+    "article": "ASH-016",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 39900,
+    "price": 42000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf299e45bac1de6b9"
+    },
+    "id": "4b1b4ffa-4064-416f-89d2-5ae826a7318c",
+    "name": "Taxta idish 2 in 1 43 x 43",
+    "article": "ASH-017",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 46600,
+    "price": 49000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe7b2a3c70374bbc3"
+    },
+    "id": "1b5777bd-382d-4829-aca9-053cc6cb882f",
+    "name": "Taxta idish 2 in 1 49 x 49",
+    "article": "ASH-018",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 54400,
+    "price": 57000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb42e1b696461b8f84"
+    },
+    "id": "75e8f69f-9d3d-4f0a-b673-3576df44c93e",
+    "name": "Kubik LUX",
+    "article": "AO-020",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 6700,
+    "price": 7400,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8ed09937a4159ec7"
+    },
+    "id": "29b67305-02f3-4ab8-8193-2e5dc3f02715",
+    "name": "Kubik Hayvon",
+    "article": "AO-022",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7000,
+    "price": 7500,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd36d16e1ccfe912a"
+    },
+    "id": "ca1c1ec9-aeec-4c21-a481-c3d78ed718dd",
+    "name": "Kubik Shakl",
+    "article": "AO-023",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7000,
+    "price": 7500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd490341f2316071a"
+    },
+    "id": "ac495dee-b237-4145-990b-568f25e1cda1",
+    "name": "Kamaz qum",
+    "article": "AO-037",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 18000,
+    "price": 19000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf69ceeca3b0c7c1f"
+    },
+    "id": "6e12b95d-1980-4edf-a05e-325d5d126f51",
+    "name": "Kamaz man + koptok",
+    "article": "AO-030",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 11500,
+    "price": 0,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb315f9cd38ad2efb9"
+    },
+    "id": "cf6abf96-381f-456d-9d7b-850c37d923a8",
+    "name": "Fura",
+    "article": "AO-031",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7300,
+    "price": 7800,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8d5fac287e4c817e"
+    },
+    "id": "b5105ace-a41a-48ea-a01a-240b4c549353",
+    "name": "Prado",
+    "article": "AO-033",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 9600,
+    "price": 10000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb47509924135a6807"
+    },
+    "id": "173b2450-5fe2-491e-a66a-a06c51e9444c",
+    "name": "Makvin 31",
+    "article": "AO-035",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 14400,
+    "price": 15000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8791370147703162"
+    },
+    "id": "7ce3fba5-81e9-43c5-9339-8ba8b1c8e99b",
+    "name": "Cooper",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14500,
+    "price": 15950,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb164c77d704b1c648"
+    },
+    "id": "c42ce66c-2537-4a72-ae19-af8d21d19948",
+    "name": "Kema karobkada",
+    "article": "AO-038",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 4000,
+    "price": 4500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.271Z",
+    "updatedAt": "2026-02-12T10:48:27.271Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3d511b9e0bb4dedd"
+    },
+    "id": "b5ae1802-b9f6-4c50-833a-e6039d0936da",
+    "name": "Badminton",
+    "article": "AO-110",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 9200,
+    "price": 10000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb57d079f133937501"
+    },
+    "id": "2fe0a3bc-e393-49c4-867b-deb97df1289b",
+    "name": "Lazer har xil",
+    "article": "AO-111",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 9800,
+    "price": 11000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb07c13bf329b8a1f8"
+    },
+    "id": "e731a196-bf5d-4493-aec6-37cc1d09776b",
+    "name": "Lazer Shakl",
+    "article": "AO-115",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 14000,
+    "price": 15000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4a8e95d846c2e091"
+    },
+    "id": "a27359de-008c-40ea-ae85-e0e08858b0c1",
+    "name": "Modnitsa OPP",
+    "article": "AO-113",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7800,
+    "price": 7500,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9e09611e70c9148b"
+    },
+    "id": "508b8181-ce5e-469a-bf5b-2ad882a0d380",
+    "name": "Modnitsa PVX",
+    "article": "AO-087",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10700,
+    "price": 11500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3f68b565fa00c36c"
+    },
+    "id": "ae2959fb-7bd4-4bc9-a29a-ba67e412258c",
+    "name": "Qo'ziqorin puzzle OPP",
+    "article": "AO-114",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 6000,
+    "price": 0,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe9cd3ff028404971"
+    },
+    "id": "a6a6c569-eef3-4e28-aed3-ef71dcb5498a",
+    "name": "3D Puzzle OPP",
+    "article": "AO-118",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 6900,
+    "price": 7400,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfccff34e945f9b11"
+    },
+    "id": "ecc69218-f96e-4fe9-a45d-28c909f33ae2",
+    "name": "Chelak nabor",
+    "article": "AO-119",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 5500,
+    "price": 6000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf1679078a60a0637"
+    },
+    "id": "e804dfce-5b1b-4fe4-b633-5d65b92c7106",
+    "name": "Badminton mini",
+    "article": "AO-8",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 7000,
+    "price": 0,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb29e7f87e3d9ca0eb"
+    },
+    "id": "5c71b2ad-7711-4fe8-937f-cf7d8fd90888",
+    "name": "PVX plastinka",
+    "article": "AK-083",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8300,
+    "price": 9000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbcd30d08e906f6bff"
+    },
+    "id": "f31fc313-7adc-461a-b25f-23d10091eede",
+    "name": "Plastinka idishli",
+    "article": "AK-084",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 17100,
+    "price": 18000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7d99f7cb43457c65"
+    },
+    "id": "435f2052-41c8-4233-a8f0-a333b5a510c8",
+    "name": "PVX Do'mik",
+    "article": "AK-026",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8200,
+    "price": 9000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb127775b3c21fe230"
+    },
+    "id": "d0afa1d5-e390-400e-893a-24d97df5408c",
+    "name": "Domik shakl idish",
+    "article": "AK-086",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 17200,
+    "price": 18000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb553579390db74ebf"
+    },
+    "id": "7d766848-fd2f-48ab-aae8-98ec9c856639",
+    "name": "PVX Burchak shakl",
+    "article": "AK-078",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10200,
+    "price": 11000,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfbbff90765f25933"
+    },
+    "id": "dc3660ba-4ca4-4294-8175-8b4b4e8443c7",
+    "name": "Burchak shakl idishli",
+    "article": "AK-088",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22000,
+    "price": 0,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb920783269f3c8dd3"
+    },
+    "id": "6c85d4b1-ec7b-46dc-8702-fb05f206875e",
+    "name": "PVX 5 xil Shakl",
+    "article": "AK-028",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10500,
+    "price": 11000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb2743ea8dbd3356d"
+    },
+    "id": "df92323a-b206-4cb7-86b2-21cc698382d7",
+    "name": "5 xil shakl idishli",
+    "article": "AK-085",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22300,
+    "price": 23000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb574a375c29333320"
+    },
+    "id": "1502c8ae-1166-4f77-8b8c-f60bb3abd8eb",
+    "name": "PVX to'rtburchak",
+    "article": "AK-090",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10100,
+    "price": 11000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd48b154cd16532a7"
+    },
+    "id": "82651689-8cff-411a-8d9b-3c9ff4a8f37e",
+    "name": "To'rtburchak idishli",
+    "article": "AK-089",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 19900,
+    "price": 23000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe2934f0feb689bde"
+    },
+    "id": "aea57e9b-b11a-4772-8de4-b35aacaca067",
+    "name": "PVX Trubka",
+    "article": "AK-120",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10000,
+    "price": 11000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb0b32cd11220534c0"
+    },
+    "id": "4dfd5e6e-1b8e-41de-87e1-4b28ce056b51",
+    "name": "Idish Trubka",
+    "article": "AK-121",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 17000,
+    "price": 18000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5dd4d262a2150f6c"
+    },
+    "id": "24fee9a0-c18a-42d1-8a15-03f0444a26c6",
+    "name": "PVX Qor parcha",
+    "article": "AK-122",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10000,
+    "price": 11000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6ef72cf29242e371"
+    },
+    "id": "ca801475-81f4-4013-b766-89bd16c8aaac",
+    "name": "Idish Qor parcha",
+    "article": "AK-123",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22000,
+    "price": 23000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbac205b835cd468e2"
+    },
+    "id": "6222d9da-5fb3-4120-88d6-7214572c24a0",
+    "name": "PVX Transformer",
+    "article": "AK-124",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8000,
+    "price": 9000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb165aef2c4e93a977"
+    },
+    "id": "b09f9fb2-c85f-4bc1-b2a9-8f6946a715db",
+    "name": "Idish Transformer",
+    "article": "AK-125",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22000,
+    "price": 23000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba0f27939704c4492"
+    },
+    "id": "9d1149ae-a3d0-4fe4-a711-769fe7799bd3",
+    "name": "PVX Malekula",
+    "article": "AK-126",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10200,
+    "price": 11000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe39c7b0633ed2b89"
+    },
+    "id": "5e19208a-39fa-468b-b9e8-85b7c1090ad4",
+    "name": "Idish Malekula",
+    "article": "AK-127",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22200,
+    "price": 23000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbde1f39d2fe4c747d"
+    },
+    "id": "fd29a434-c648-4e07-aacb-04f5d330b0dc",
+    "name": "PVX Mazayka",
+    "article": "AK-128",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 10000,
+    "price": 11000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba3f57cd2c6a38914"
+    },
+    "id": "67574d2a-5665-408e-b948-3e6fbf888248",
+    "name": "Idish Mazayka",
+    "article": "AK-129",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 22000,
+    "price": 23000,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc5b596873de4290d"
+    },
+    "id": "cc2da2ee-7d09-4b2c-b86c-199043d1e90c",
+    "name": "PVX 7 xil Hayvon",
+    "article": "AK-029",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8100,
+    "price": 9000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb71e2dc938e322d4a"
+    },
+    "id": "f9d0369a-bf59-45de-bd53-17b2983f910d",
+    "name": "PVX Kubik shakl",
+    "article": "AK-077",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8400,
+    "price": 0,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb875e6f2db794d1e2"
+    },
+    "id": "c7eafed6-31d4-4998-9c77-639bd76b1d14",
+    "name": "PVX 3D puzzle",
+    "article": "AK-079",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8100,
+    "price": 0,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb14807078627d75c8"
+    },
+    "id": "9adb4d46-6959-4335-ba07-a19bbb1dd58e",
+    "name": "PVX Qo'ziqo'rin",
+    "article": "AK-080",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8100,
+    "price": 0,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba54b1197a958f239"
+    },
+    "id": "af85d6e0-fec0-418a-8bd3-4871782d8a6a",
+    "name": "PVX Alifbo",
+    "article": "AK-081",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8300,
+    "price": 9000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe19a2deb83547265"
+    },
+    "id": "45364217-14ac-4780-8e72-700cfce93a57",
+    "name": "PVX kubik hayvonli",
+    "article": "AK-082",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 8400,
+    "price": 0,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc9b1f2dbff882ddd"
+    },
+    "id": "97277097-e6d6-4500-a0f7-e2890dcb718c",
+    "name": "Karobkali 5 xil Shakl",
+    "article": "AK-130",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 28500,
+    "price": 30000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc3e4d86adaffe479"
+    },
+    "id": "107fa844-f3db-43ff-844d-cd5610e1c847",
+    "name": "Karobkali Molekula",
+    "article": "AK-131",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 28500,
+    "price": 30000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2e299f6a4006fa6b"
+    },
+    "id": "57d53cbd-2739-4fe1-95ea-18abf1737d09",
+    "name": "Karobkali  To'rtburchak shakl",
+    "article": "AK-132",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 28500,
+    "price": 30000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbba093fe15334e4de"
+    },
+    "id": "a217d5d4-8f77-48f7-bfed-f20aaf2c1fb5",
+    "name": "Fen",
+    "article": "AT-072",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1250,
+    "price": 1400,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb275689a102fa6a38"
+    },
+    "id": "af079817-509a-439c-b75d-08bfe414bf2d",
+    "name": "Hayvon 1 ta",
+    "article": "AT-001",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 950,
+    "price": 1000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe981fea996690b9a"
+    },
+    "id": "b0bc7f96-3ab2-4944-bb76-49c538063197",
+    "name": "Hayvon 2 ta",
+    "article": "AT-068",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1900,
+    "price": 2000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3107000b3879cb1f"
+    },
+    "id": "345587c5-c414-46e5-80d7-5b6802ebda94",
+    "name": "Ochkiy",
+    "article": "AT-071",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 500,
+    "price": 550,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7daa86c56110fae1"
+    },
+    "id": "499c2b93-202f-4496-9c9d-da0f9ee3af22",
+    "name": "Vertalyot katta",
+    "article": "AT-056",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1700,
+    "price": 0,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1ff4d74d34bebb06"
+    },
+    "id": "49481288-05dc-4967-8c7f-db5f4a3d40f9",
+    "name": "Fil",
+    "article": "AT-044",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1750,
+    "price": 1800,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4628cfec21b421da"
+    },
+    "id": "c02a57eb-4c04-47e8-b705-837767f8bc69",
+    "name": "Znak 4",
+    "article": "AT-102",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 700,
+    "price": 750,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7cfb69480a3d5d8b"
+    },
+    "id": "7b1ec9be-26c8-49c2-b532-a688a0e2eb70",
+    "name": "Znak",
+    "article": "AT-050",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1450,
+    "price": 0,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfe2e4e4f9a2b2ebf"
+    },
+    "id": "37a5f8ef-9121-4049-af19-0d0492114f31",
+    "name": "Znachok",
+    "article": "AT-051",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 950,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb56b370517838eeac"
+    },
+    "id": "a262c922-2afd-4a72-8660-5652287c6f95",
+    "name": "1 ta lapatka 1 ta qolip",
+    "article": "AT-063",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 850,
+    "price": 900,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1eb777a5a7fa511b"
+    },
+    "id": "294a61aa-c9ce-4f7c-890c-493824f59c6c",
+    "name": "2 ta lapatka 2 ta qolip",
+    "article": "AT-062",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1650,
+    "price": 0,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc0cdbe0c9946978f"
+    },
+    "id": "e3c1fef2-d119-43a3-8688-fe50070609e1",
+    "name": "Robot 23",
+    "article": "AT-061",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2300,
+    "price": 2400,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb56413c17ec6d5a58"
+    },
+    "id": "00b446ae-99f6-4eae-b6aa-9b04ec5f6cc8",
+    "name": "Avatar vertalyot",
+    "article": "AT-055",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1850,
+    "price": 1900,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe5f4b40e984dd53b"
+    },
+    "id": "8ab058dc-5b35-4844-ae08-4e0f0e3694b6",
+    "name": "Turbo shilaqurt",
+    "article": "AT-042",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2100,
+    "price": 2250,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb809bf41071d39c60"
+    },
+    "id": "5ce68a31-77eb-4997-b92e-c9bcbe79c753",
+    "name": "Samalyot",
+    "article": "AT-057",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1950,
+    "price": 2100,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb0ea4ab2e1d2363d3"
+    },
+    "id": "1b13d720-6501-4950-ba49-426bcbfe2d69",
+    "name": "Treller",
+    "article": "AT-043",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2100,
+    "price": 2300,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb0e81793d3dd7629"
+    },
+    "id": "205f3bb4-3e6b-4b8a-88d6-2f6374c59595",
+    "name": "Puzzle kichik",
+    "article": "AT-065",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1400,
+    "price": 1500,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba6d1f4a245162513"
+    },
+    "id": "4d623a3a-0cf2-4834-98ff-ddc320b7e238",
+    "name": "Robot 17",
+    "article": "AT-060",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2200,
+    "price": 2300,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6466709b95e60831"
+    },
+    "id": "ef1b061d-7efc-4e99-8367-6a54d734ecf0",
+    "name": "Samaliyot kichik",
+    "article": "AT-054",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1400,
+    "price": 1500,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb64cd8a2bb913db5c"
+    },
+    "id": "f75f7094-8c3c-475b-988c-c1940a62b24d",
+    "name": "Yahta mini",
+    "article": "AT-052",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 950,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb799d42d0d723c87e"
+    },
+    "id": "cfd39c0a-7a72-49b6-800a-200693a97ede",
+    "name": "Dazmol",
+    "article": "AT-070",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1400,
+    "price": 0,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb941f2e860b54a4ea"
+    },
+    "id": "75831fdf-e8c2-43f0-8276-df7b0742dcf5",
+    "name": "Domik 2",
+    "article": "AT-091",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1800,
+    "price": 1900,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9fe7a396bb23f3f3"
+    },
+    "id": "02dfe83a-a18b-4522-a5d2-353d072c1512",
+    "name": "Domik 1",
+    "article": "AT-064",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 950,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6e13981c743b83ca"
+    },
+    "id": "068b584f-c5e3-4b0a-b127-f1750930921e",
+    "name": "NLO 1 ta",
+    "article": "AT-098",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 450,
+    "price": 500,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba39cd3dded88a730"
+    },
+    "id": "0fc280fb-86f8-4f22-8d64-76870a9f1237",
+    "name": "NLO 2 ta",
+    "article": "AT-099",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 1000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7bb5a81fd479faff"
+    },
+    "id": "c7bb61b3-4ba8-4398-b423-76087a0e5b20",
+    "name": "NLO 3 ta",
+    "article": "AT-058",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1350,
+    "price": 1450,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd322732cde0269c5"
+    },
+    "id": "830319f0-20af-4047-92fe-36412313809f",
+    "name": "Robot Samuray",
+    "article": "AT-059",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1850,
+    "price": 2000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.272Z",
+    "updatedAt": "2026-02-12T10:48:27.272Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd048092ee028728d"
+    },
+    "id": "e3b871d1-a151-4e29-b1d3-25b9762cf0e8",
+    "name": "Ochkiy burun",
+    "article": "AT-040",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1350,
+    "price": 1400,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3fef12ef4be098ca"
+    },
+    "id": "6ef0ee44-0ac1-4fef-a8a0-bce645b2ba76",
+    "name": "Ping Pong 1",
+    "article": "AT-100",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1050,
+    "price": 1100,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe298e937272e7a90"
+    },
+    "id": "103fdd69-4546-4a1b-a439-5db1e756bdb4",
+    "name": "Ping Pong 2",
+    "article": "AT-053",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1890,
+    "price": 2000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb26723b65cdf232c2"
+    },
+    "id": "6d6e54fa-79e7-48fa-bf87-49788431a7eb",
+    "name": "",
+    "article": "AT-046",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8c3e7e364494de71"
+    },
+    "id": "b5135f01-524b-4e0e-b80b-8ee55c62a2bd",
+    "name": "Kamaz dog",
+    "article": "AT-049",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2200,
+    "price": 2400,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd0d3f0ee03658110"
+    },
+    "id": "36a484cc-77ea-4fc7-aa32-ef114be5b463",
+    "name": "Yahta",
+    "article": "AT-048",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1250,
+    "price": 1300,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7a39a852109ef515"
+    },
+    "id": "06910247-09e7-4a46-8efd-f8ff2a09ed91",
+    "name": "Ployka",
+    "article": "AT-074",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 950,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb42671be339d46706"
+    },
+    "id": "e9219c96-6848-4aa7-a002-80445f615ceb",
+    "name": "Golf car",
+    "article": "AT-045",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1950,
+    "price": 2100,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc429501405092972"
+    },
+    "id": "1afe7bb3-0eef-454d-b939-3a1b7f3e6ba8",
+    "name": "",
+    "article": "AT-039",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8b7ca94a258e9397"
+    },
+    "id": "78d9f70b-88ca-4b9e-842d-677d6c750d8e",
+    "name": "",
+    "article": "AT-041",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb4bd268b677d39aa"
+    },
+    "id": "071a5283-f751-4b2a-bcd2-1922d16a4b3e",
+    "name": "4 xil Buldozer",
+    "article": "AT-092",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1900,
+    "price": 2000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf7b46aef6990da23"
+    },
+    "id": "35c15f68-9371-446c-91d8-181643ab4493",
+    "name": "OPP kema",
+    "article": "AT-093",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2100,
+    "price": 2200,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbcdf5a1821f89ac83"
+    },
+    "id": "fb51fb04-db09-44c2-9f49-258a3ccca311",
+    "name": "Alifbo 4 talik",
+    "article": "AT-101",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 800,
+    "price": 850,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9eabdf3225c5daf3"
+    },
+    "id": "7eb4de6f-3c5b-49f5-a56e-4b6a864f5be5",
+    "name": "Alifbo 6 talik",
+    "article": "AT-097",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1300,
+    "price": 1400,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbbc611cfe1a133abc"
+    },
+    "id": "932afa5f-e96e-46f2-8141-904d72b0251a",
+    "name": "Alifbo 10 talik",
+    "article": "AT-073",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2000,
+    "price": 2200,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf6364a694fd78050"
+    },
+    "id": "67224780-d2d6-464d-89a6-be6c37bea108",
+    "name": "Robot 13",
+    "article": "AT-095",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1250,
+    "price": 1300,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb417c95834d503091"
+    },
+    "id": "9ba321a8-d032-4c7e-9cac-549bc535c678",
+    "name": "Hummer",
+    "article": "AT-096",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1900,
+    "price": 2000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb10117410c48e0647"
+    },
+    "id": "cfcfcd60-f794-461d-9742-0353efe5ad07",
+    "name": "Avtobus",
+    "article": "AT-103",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 3150,
+    "price": 3200,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9d1a4da5110e54fb"
+    },
+    "id": "510ca937-0df4-487e-891f-971c1ee2e2c5",
+    "name": "Prinsessa sumka",
+    "article": "AT-104",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1200,
+    "price": 1300,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1086c458fab88668"
+    },
+    "id": "3cc981b5-377b-41e1-a6cc-47743529a917",
+    "name": "Dazmol ochkiy",
+    "article": "AT-106",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1900,
+    "price": 2150,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2d48459b5a829ff9"
+    },
+    "id": "a35ef7b3-4b68-4ebd-a931-e0207ceea83f",
+    "name": "Fen ochkiy",
+    "article": "AT-107",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1750,
+    "price": 1900,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb05f164fbede31afd"
+    },
+    "id": "e1e50d3d-52cc-4a9e-af05-257eeb855565",
+    "name": "Prinsessa  ochkiy",
+    "article": "AT-108",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1700,
+    "price": 1800,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbae0fa92a7e718bac"
+    },
+    "id": "eef96882-edf2-4f12-b450-3ccd321ade65",
+    "name": "Ployka ochkiy",
+    "article": "AT-109",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1400,
+    "price": 1500,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb810644874cc2cc34"
+    },
+    "id": "a2c65830-4735-4471-97c2-11bf27de2cfd",
+    "name": "Leyka",
+    "article": "AT-047",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1180,
+    "price": 1250,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9f0dc4b25114e2e4"
+    },
+    "id": "bf6c04fd-5c5b-4bae-bced-8de15ceb9f39",
+    "name": "5 xil shakil 8",
+    "article": "AT-066",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1040,
+    "price": 1150,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe6841069dd25fe29"
+    },
+    "id": "28cbf75e-363b-4767-87b4-b989028793c2",
+    "name": "5 xil shakil 16",
+    "article": "AT-067",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2080,
+    "price": 2250,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6d74a59a1ff389aa"
+    },
+    "id": "bd752fcf-0f01-436e-8f12-98e24dd09763",
+    "name": "Oyna + Taroq + Zokolka",
+    "article": "AT-116",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1900,
+    "price": 2000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd330bed75e41ce83"
+    },
+    "id": "b5affb39-ff0d-461e-9f2d-9cd30964282b",
+    "name": "Oyna + Taroq + Zokolka 0,5",
+    "article": "AT-117",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 950,
+    "price": 1000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb06a9992aeacd391a"
+    },
+    "id": "bd2f214d-ef71-4bbf-b70e-3fa4fb9decd8",
+    "name": "Smart puzzle 1",
+    "article": "AT-118",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 750,
+    "price": 750,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba83602690029c3d8"
+    },
+    "id": "4aff3339-f926-4c6d-9c03-c92a5bbb502d",
+    "name": "Microfon",
+    "article": "AT-130",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 2100,
+    "price": 2200,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4803d89dea811444"
+    },
+    "id": "d278212f-f86f-4e1b-bb9c-78dad0bed541",
+    "name": "Robot 11 1ta",
+    "article": "AT-131",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 900,
+    "price": 900,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3b76bd0f002c9486"
+    },
+    "id": "b2d59c7b-6f6c-4133-9dd6-23b159c1e77d",
+    "name": "Robot 11 2ta",
+    "article": "AT-132",
+    "category": "",
+    "type": "akitoy",
+    "stock": 0,
+    "cost": 1750,
+    "price": 1800,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdc45686c5443152f"
+    },
+    "id": "9a9d3275-c143-47cd-959e-9cf38062db14",
+    "name": "Болалар стол-стули (комплект)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 350000,
+    "price": 385000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbca729c3832a07137"
+    },
+    "id": "24285f08-e624-412b-9761-ec7d18802185",
+    "name": "Шаланда",
+    "article": "МАК-1",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26700,
+    "price": 29370,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb78aad92dbdc51995"
+    },
+    "id": "a3b27e43-03e4-4480-b74d-f892451b5935",
+    "name": "Мак",
+    "article": "МАК-2",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 22300,
+    "price": 24530,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe32ca4cd377e638e"
+    },
+    "id": "9033239d-fad4-4bac-8b49-9a30d726c022",
+    "name": "Средный",
+    "article": "МАК-3",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 16800,
+    "price": 18480,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb201271a0ab2fd0bc"
+    },
+    "id": "2814461a-d530-4528-ba20-c2200a62c1fc",
+    "name": "Средный шаланда",
+    "article": "МАК-4",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 4,
+    "price": 4,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3a7857735c7ce53b"
+    },
+    "id": "0d039026-04f9-4d9f-8309-b009fa11e144",
+    "name": "Мини",
+    "article": "МАК-5",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12000,
+    "price": 13200,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb22dc30e5cf73630"
+    },
+    "id": "e85ef14e-625b-4e94-8b11-ac67e018c56d",
+    "name": "Феррари (889)",
+    "article": "МАК-7",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26000,
+    "price": 28600,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb84e593cff8bae6d4"
+    },
+    "id": "7a5e2f73-a66a-4199-833a-5853d39ea95d",
+    "name": "Феррари (208)",
+    "article": "МАК-8",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26000,
+    "price": 28600,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbde4a35e2b587d5af"
+    },
+    "id": "545fc7a2-e5b4-43d6-aa21-468e911c5b57",
+    "name": "Феррари (209)",
+    "article": "МАК-11",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 24800,
+    "price": 27280,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd18d87e84d8d4428"
+    },
+    "id": "c33ba365-7f80-4f73-81d4-a31d0d34a643",
+    "name": "Бугатти",
+    "article": "МАК-10",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 17300,
+    "price": 19030,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbab0383650faf4193"
+    },
+    "id": "6060dcba-09ed-47c6-99fe-11c5ac188b07",
+    "name": "Мак Вин (5545)",
+    "article": "МАК-12",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 6350,
+    "price": 6985,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb26e6e156cdc702cd"
+    },
+    "id": "ee964a00-84e5-4b56-a4c0-51e6f84c443f",
+    "name": "Маленький машина",
+    "article": "МАК-9",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 2200,
+    "price": 2420,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc77f649e0a5292ae"
+    },
+    "id": "cdf2e3c0-d631-41cb-a625-00beda881bc0",
+    "name": "Мерс (1818)",
+    "article": "МАК-15",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14300,
+    "price": 15730,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb284585d5c5c42ce6"
+    },
+    "id": "f0a3f175-b17d-4ad7-be57-8d546f5b757a",
+    "name": "Камаз",
+    "article": "МАК-16",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 8900,
+    "price": 9790,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb01a23c8a5ced7845"
+    },
+    "id": "0849503e-2896-4556-9168-62d2f660a78d",
+    "name": "Хаммер",
+    "article": "МАК-17",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 21000,
+    "price": 23100,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb58ca13a43092eef7"
+    },
+    "id": "87bf25f8-52ae-469c-926d-2bc135d2236c",
+    "name": "Прадо",
+    "article": "МАК-18",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 13500,
+    "price": 14850,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc9262c2c6e956f96"
+    },
+    "id": "8f49068f-c506-4f85-8356-6e83a54b5123",
+    "name": "Гоночная машинка",
+    "article": "МАК-24",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 2500,
+    "price": 2750,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb51f958be039eacad"
+    },
+    "id": "20fc9686-4287-432c-ac27-e6234974d156",
+    "name": "Камаз \"МАН\"",
+    "article": "МАК-27",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 37000,
+    "price": 40700,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba8a3b4a1814d9a9c"
+    },
+    "id": "47ad47bc-065a-4e3c-afa6-ce772cf16f91",
+    "name": "Супер Камаз",
+    "article": "МАК-13",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 19700,
+    "price": 21670,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbeb233bb78873dd8d"
+    },
+    "id": "10575a9c-4d68-4f96-841f-a0fe2ffb64c9",
+    "name": "BMW X5",
+    "article": "МАК-14",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 13400,
+    "price": 14740,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba17a839d17f318b0"
+    },
+    "id": "ac11884a-4304-497f-9d04-92ce5a2eb321",
+    "name": "Ауди",
+    "article": "МАК-26",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 88500,
+    "price": 97350,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc3f5cf7d5d70bb45"
+    },
+    "id": "5b68db43-7da3-4d9b-8510-218a3036287f",
+    "name": "Панда",
+    "article": "МАК-19",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 93500,
+    "price": 102850,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb087d5d490971953d"
+    },
+    "id": "a2608009-5dc6-4f2e-b31d-14c49ef4e182",
+    "name": "Велосипед",
+    "article": "МАК-23",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 72600,
+    "price": 79860,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb9246572cbfc282c"
+    },
+    "id": "df4fad99-acf9-40d2-8830-ad759325825b",
+    "name": "Айикча",
+    "article": "МАК-6",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 61600,
+    "price": 67760,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb23db035feb2f77b2"
+    },
+    "id": "49274f35-dfd6-40a1-88ba-5656c31a2885",
+    "name": "Пикап",
+    "article": "МАК-28",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 98500,
+    "price": 108350,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb62b24b04eb2a2350"
+    },
+    "id": "080ead1f-d23f-421e-a5be-10a358df4a5a",
+    "name": "Тедди",
+    "article": "МАК-29",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 98500,
+    "price": 108350,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf6b4b7be71c339a9"
+    },
+    "id": "3f66d1ee-cdc5-437f-a6f2-bb4955b6c424",
+    "name": "Пикап Люкс",
+    "article": "МАК-20",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 135000,
+    "price": 148500,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbbed3a3200cff96e0"
+    },
+    "id": "6cbd4701-6ab8-4779-aed6-dd46753652fd",
+    "name": "Тедди Люкс",
+    "article": "МАК-21",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 135000,
+    "price": 148500,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.273Z",
+    "updatedAt": "2026-02-12T10:48:27.273Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb49bf73ff091f2966"
+    },
+    "id": "12cfcf61-cf49-4811-ad20-fd71f0668f6a",
+    "name": "Мега Мак (без Прицеп)",
+    "article": "МАК-25",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 112400,
+    "price": 123640,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfd1fe4ecc41b1c43"
+    },
+    "id": "6849ebdd-dc16-415c-9910-8fb2561ee948",
+    "name": "Мега Мак (Прицеп)",
+    "article": "МАК-25",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 151000,
+    "price": 166100,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb765f8c10bcfc851f"
+    },
+    "id": "f81c0388-ed2d-4ddd-8a5c-88a4b2fc2a26",
+    "name": "Range Rover (Толокар с ручкой)",
+    "article": "МАК-60",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 145000,
+    "price": 159500,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbaf17147095927023"
+    },
+    "id": "d0745546-572e-462a-be6d-85f2399d1bb0",
+    "name": "Range Rover (Толокар без ручки)",
+    "article": "МАК-61",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 113000,
+    "price": 124300,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb80190f18e3422aa"
+    },
+    "id": "44367d88-7534-46b8-bc39-ef99ac2ce093",
+    "name": "BMW X6",
+    "article": "МАК-30",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25200,
+    "price": 27720,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb72dca2305f69c200"
+    },
+    "id": "5b447cca-4dad-4e6b-822a-f7e72249ad0f",
+    "name": "RANGE ROVER",
+    "article": "МАК-31",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb125fa994c91317e4"
+    },
+    "id": "ea8d25a4-5c80-4a4b-a352-ca4f6b7aa31c",
+    "name": "PORSCHE",
+    "article": "МАК-32",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26200,
+    "price": 28820,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb373040579749cdd9"
+    },
+    "id": "04b5b830-dddd-413d-8e98-439b1f741e85",
+    "name": "PORSCHE POLICE",
+    "article": "МАК-32",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 28200,
+    "price": 31020,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba21a0525450d80f3"
+    },
+    "id": "8eb2664c-e35c-4f4d-9b03-61c1a6e9b9ad",
+    "name": "(4х1) Рачок,Кран,Миксер,Цистерна",
+    "article": "МАК-33",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 16000,
+    "price": 17600,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7070ab8686ce338a"
+    },
+    "id": "6cd6cfbd-361d-4daf-991b-5372a39fe6f9",
+    "name": "Ferrari",
+    "article": "MAK-34",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 28200,
+    "price": 31020,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbff970f1603fa2cde"
+    },
+    "id": "0315070b-3fa1-4a4f-913c-acd5fdb3614c",
+    "name": "BMW M8",
+    "article": "MAK-35",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26000,
+    "price": 28600,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc0ddc2c96274b24e"
+    },
+    "id": "d5736dd5-500a-42c5-ab5f-383a86f5100c",
+    "name": "BUGATTI",
+    "article": "MAK-36",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4d45128aa5823296"
+    },
+    "id": "3f88b0e3-a020-4edb-bfec-9e7712e1639e",
+    "name": "Миксер (Большой)",
+    "article": "МАК-37",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe6669198cb8ddb8b"
+    },
+    "id": "3babe75c-a2de-4e5f-8eb3-5701f90cd0e9",
+    "name": "Цистерна (Большой)",
+    "article": "МАК-38",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7072bca573a24821"
+    },
+    "id": "3413f56e-381e-4ccf-90f2-2fc26c6fd018",
+    "name": "Кран (Большой)",
+    "article": "МАК-39",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbaee785c24e92e97a"
+    },
+    "id": "4bd18788-f3bc-4ed5-a68a-e85fbcf8abf7",
+    "name": "Рачок (Большой)",
+    "article": "МАК-40",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbab688c519f41cf4d"
+    },
+    "id": "0f5335ed-01ca-4e24-bd79-bd41cef6d43d",
+    "name": "(6х1) Пожарный,Миксер, Камаз,Рачок, Эвакуатор,Полицейский",
+    "article": "МАК-41",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12000,
+    "price": 13200,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb745d6d60734045f3"
+    },
+    "id": "b5977eb5-75ab-4720-bfea-0f5d5c564b47",
+    "name": "Rolls-Royce",
+    "article": "MAK-42",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26000,
+    "price": 28600,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb06737346db6210a9"
+    },
+    "id": "15dd48af-81d2-4f3d-a54a-cdf3d48e5b8c",
+    "name": "Hummer",
+    "article": "MAK-43",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 29300,
+    "price": 32230,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3481074642e4bed6"
+    },
+    "id": "94357fc4-4c76-479d-a285-71d411df7087",
+    "name": "CADILAC",
+    "article": "MAK-45",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8b9aa6323b07a82e"
+    },
+    "id": "c516451e-e6a6-459b-85eb-beb0a239e228",
+    "name": "LEXUS",
+    "article": "MAK-46",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5e57193ba868ae6d"
+    },
+    "id": "1767d336-457d-4b21-af95-231cfb21899d",
+    "name": "AUDI",
+    "article": "MAK-47",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1800a25b1bf4e791"
+    },
+    "id": "569fd6a8-9ebc-44cd-87ce-ec8c56fe453c",
+    "name": "LAND CRAUSER",
+    "article": "MAK-48",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb92ca4202bcac9d98"
+    },
+    "id": "cfe6ffea-b20b-4df3-a089-aae6a0c29f13",
+    "name": "BENTLI",
+    "article": "MAK-49",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb55fa8e55792fa921"
+    },
+    "id": "7c60abdd-efe9-4a09-847b-cd778de1b61b",
+    "name": "MERCEDES BENZ",
+    "article": "MAK-57",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb523c5aaa907c7ae2"
+    },
+    "id": "86600fc3-fecb-4794-a32f-32393922dfc4",
+    "name": "(8x1)",
+    "article": "MAK-58",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 17000,
+    "price": 18700,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb84bee4685da03835"
+    },
+    "id": "f86fd9b3-4e6a-42c4-b32e-0bc732e910fa",
+    "name": "(8x1)Коробка",
+    "article": "MAK-58",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 19000,
+    "price": 20900,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb224399cebbddb6b3"
+    },
+    "id": "a7173007-7710-4c06-abac-9d0b0ce34e0a",
+    "name": "Мини набор (22)",
+    "article": "MAK-59",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 45000,
+    "price": 49500,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb0ce61db3784d10df"
+    },
+    "id": "4f97376d-e3a0-4204-9376-cb4143e079db",
+    "name": "Мини набор (7)",
+    "article": "MAK-59",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12500,
+    "price": 13750,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3da747c964850f1b"
+    },
+    "id": "74d3f2f0-3018-4c2b-a9a9-944ca350c906",
+    "name": "Gelandewagen",
+    "article": "MAK-63",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 37000,
+    "price": 40700,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb62f4c51af811e6bd"
+    },
+    "id": "b339ccbc-a30a-416e-b965-de10d7969b9c",
+    "name": "\"Автовоз\"(трейлер) с машинками",
+    "article": "MAK-64",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 100000,
+    "price": 110000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb0c93632ba6067edf"
+    },
+    "id": "33bcf8da-f694-486f-85f8-38f409dcd97f",
+    "name": "",
+    "article": "MAK-65",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 8000,
+    "price": 8800,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfc3d78db38330e99"
+    },
+    "id": "5cbf190b-b6ff-466d-b862-ff69c90cbde6",
+    "name": "",
+    "article": "MAK-66",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 8000,
+    "price": 8800,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6d8e403c5172cfeb"
+    },
+    "id": "285839b6-62c2-4de5-879d-240fb2b425ae",
+    "name": "\"Гибрид\"",
+    "article": "MAK-67",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 28000,
+    "price": 30800,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfd9b5edbd0516767"
+    },
+    "id": "bef7c06b-581a-442d-9e3b-828e55649058",
+    "name": "\"Суперкар\"",
+    "article": "MAK-68",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdf1111433fb8d503"
+    },
+    "id": "51135545-6f26-4ad4-844b-35d25f82be17",
+    "name": "ПЕСОЧНИЦА 2л",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 10400,
+    "price": 11440,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbaa61408b1af7e3ca"
+    },
+    "id": "60ae53de-9adc-43e8-b860-fb749cb786aa",
+    "name": "Игрушки для песочницы",
+    "article": "МАК-72",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 7500,
+    "price": 8250,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb7c24e69bb5dc5929"
+    },
+    "id": "075a5151-6d00-4aa1-9d10-9dffb47a1985",
+    "name": "Песочница 3",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 5000,
+    "price": 5500,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb27529e251b0c7adc"
+    },
+    "id": "c215b324-0cc9-4a6b-8b50-deca4d9bc7b4",
+    "name": "Болалар Лейкаси",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 2000,
+    "price": 2200,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfe05c7d55ea95fa2"
+    },
+    "id": "e3112c28-298f-42f5-8e2e-84aa13d4a703",
+    "name": "Набор игрушек для песочницы",
+    "article": "Мак-70",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 18000,
+    "price": 19800,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb0641e96f91b523b1"
+    },
+    "id": "e0245356-2981-4eef-90da-2b21fc1477c3",
+    "name": "Детская игрушка Самосвал",
+    "article": "МАК-71",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 15000,
+    "price": 16500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5f5209ab3d5dcc80"
+    },
+    "id": "5628951d-a1a9-41ba-8933-93e348079123",
+    "name": "",
+    "article": "MAK-73",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14000,
+    "price": 15400,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb12de3d83cef86d87"
+    },
+    "id": "c322f947-0948-4a4d-a83a-e27f436f37c5",
+    "name": "Трактор с прицепом",
+    "article": "MAK-74",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 13000,
+    "price": 14300,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe1a7d470b896cdce"
+    },
+    "id": "caf43afc-212b-46d4-baa5-a93a6bbd6b0d",
+    "name": "голова",
+    "article": "MAK-74",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 6000,
+    "price": 6600,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6b46ff23b137f8e3"
+    },
+    "id": "e017c4d0-e742-4726-aaed-0f5075ee6e0e",
+    "name": "Толокар (мерс)",
+    "article": "МАК-75",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 140000,
+    "price": 154000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb10c6aff63fea6d92"
+    },
+    "id": "7cbea915-b480-4a09-b3e5-afd30803615b",
+    "name": "Толокар Porsche 911",
+    "article": "МАК-76",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 140000,
+    "price": 154000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc08e3ab51130706c"
+    },
+    "id": "bcb464dc-698b-4793-bd0a-0c99ea351148",
+    "name": "Экскаватор (Рачок)",
+    "article": "МАК-77",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb49fe3c61e697da61"
+    },
+    "id": "fd7709e6-3aeb-4822-b084-d9ddc2cae388",
+    "name": "Бетономешалка",
+    "article": "МАК-78",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1e6b1d44924348b4"
+    },
+    "id": "fe4b17e4-1c86-440b-abc3-837e7a236440",
+    "name": "Автокран",
+    "article": "МАК-79",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbae1fdfecaf42ea5f"
+    },
+    "id": "1a74d94c-d769-4225-8d0c-84776e66e7f2",
+    "name": "Автовышка",
+    "article": "МАК-80",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe8642c372e783870"
+    },
+    "id": "39130f2e-8a60-4150-8e7d-b139b888b1ae",
+    "name": "Самосвал",
+    "article": "МАК-81",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9d654ca22437adc5"
+    },
+    "id": "d28cbb56-2b45-4042-8eba-7a7c866c94d1",
+    "name": "Гидромолот",
+    "article": "МАК-82",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8b4306a9922525ab"
+    },
+    "id": "a9b25944-415b-4f15-b63d-4afb63c73db0",
+    "name": "Набор игрушек для песочницы",
+    "article": "МАК-134",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 15000,
+    "price": 16500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc00e6a9bcf3522f7"
+    },
+    "id": "883cfc06-e08f-43d4-a6ab-411b61d85733",
+    "name": "",
+    "article": "МАК-135",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12000,
+    "price": 13200,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb8be98c17ed5b073"
+    },
+    "id": "11ab0936-9c2d-4f1f-974d-349d051f25f0",
+    "name": "(кичик)",
+    "article": "МАК-136",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26000,
+    "price": 28600,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb695ef2383a77658f"
+    },
+    "id": "b619c558-2182-4606-b589-2ca3d071516b",
+    "name": "(катта)",
+    "article": "МАК-137",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 32000,
+    "price": 35200,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdc5123e8f0849493"
+    },
+    "id": "6d77a7ab-35db-4ded-9289-28fd4a988da4",
+    "name": "машинка с амортизаторами (Самосвал)",
+    "article": "МАК-170",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2f893e37c0e13178"
+    },
+    "id": "8bdfef31-c239-40c4-b696-060203b9885c",
+    "name": "машинка с амортизаторами (Экскаватор)",
+    "article": "МАК-171",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb8cc987988283188e"
+    },
+    "id": "ccd36591-8ebc-41c0-8b78-64c5968f087d",
+    "name": "Конструктор 292 (Хэнди)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 115000,
+    "price": 126500,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.274Z",
+    "updatedAt": "2026-02-12T10:48:27.274Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6da018f0f245ee90"
+    },
+    "id": "e16f5e73-3ecf-4775-96ba-3c51b60ddfd8",
+    "name": "Конструктор 292 (замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 95000,
+    "price": 104500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbaf42c0ae2f1a899e"
+    },
+    "id": "b3e19e3f-bfe5-4a69-8e5f-666478d4025b",
+    "name": "Конструктор 292 (Гранд)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 117000,
+    "price": 128700,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbadf1f3204f12f13b"
+    },
+    "id": "6d8b4579-47cb-4d9a-879a-996362d23d52",
+    "name": "Конструктор 292 (Коробка)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 100000,
+    "price": 110000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb51343a7ac95d94b5"
+    },
+    "id": "59e5aed4-5569-4a4e-b1e9-50874cd8b87e",
+    "name": "Пирамида конус (6)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 7000,
+    "price": 7700,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb83fae0990d04bbcb"
+    },
+    "id": "1e3a63d4-4e58-4a89-a1cc-ef8bc8ee0354",
+    "name": "Пирамида конус (9)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 11000,
+    "price": 12100,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba22057de7e65183f"
+    },
+    "id": "f5d5f476-205b-4e81-866f-16814c0069a0",
+    "name": "Пирамида конус (12)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 17000,
+    "price": 18700,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb450e2ec0a88fb042"
+    },
+    "id": "6b9baae2-eb32-45cc-8786-bd23918717b0",
+    "name": "Пирамида конус (14)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 24000,
+    "price": 26400,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3556b0f2b53e0fac"
+    },
+    "id": "3e13a787-a279-4aac-ae1f-5b501f4104db",
+    "name": "Ходинок Лягушка",
+    "article": "MAK-50",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 127500,
+    "price": 140250,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb429a50963f2016f4"
+    },
+    "id": "1cd0f93f-8a68-4d8b-918c-e0464f65c5c4",
+    "name": "Ходинок Бейби",
+    "article": "MAK-51",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 117500,
+    "price": 129250,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf11fca398f2865df"
+    },
+    "id": "e3085423-3c0b-40ba-b776-f1f55381bee0",
+    "name": "Лего машина маленкий (80)",
+    "article": "МАК-52",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 23000,
+    "price": 25300,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd456972a14cb7607"
+    },
+    "id": "3d62c64d-1f16-482f-a7c5-d1bfba0530af",
+    "name": "Лего машина большой (129)",
+    "article": "МАК-53",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 36000,
+    "price": 39600,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbec06cb855116e902"
+    },
+    "id": "f102cf65-f457-4466-9a2e-daab44dab8b7",
+    "name": "Лего машина большой (66)",
+    "article": "МАК-54",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 41000,
+    "price": 45100,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2a95eb6eb2801ad3"
+    },
+    "id": "65f606f5-169d-4e7a-8483-25ffbc4cbe74",
+    "name": "Лего (64)",
+    "article": "МАК-55",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 41500,
+    "price": 45650,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb080e3653ccb73dbd"
+    },
+    "id": "002364b3-13cd-42f1-a432-500179e985a1",
+    "name": "Лего (79)",
+    "article": "МАК-55",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 48000,
+    "price": 52800,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb23993eea0d6299a3"
+    },
+    "id": "2587e490-ac79-44e1-805a-e7296c9f6749",
+    "name": "Лего (97)",
+    "article": "МАК-55",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 39000,
+    "price": 42900,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb30ef3d0c38636525"
+    },
+    "id": "8c73eec8-3101-4769-8815-7244fdcd20de",
+    "name": "Лего (215)",
+    "article": "МАК-55",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 46000,
+    "price": 50600,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9b51dcc0ffcc4ef8"
+    },
+    "id": "ab0f717c-6d11-425b-9cc4-e07d7c33b974",
+    "name": "Лего (480)",
+    "article": "МАК-55",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 59000,
+    "price": 64900,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6492fb1194be832f"
+    },
+    "id": "0ef2771a-d3cd-4ed7-a34e-84592e21ffb0",
+    "name": "LEGO (СУМКА)",
+    "article": "MAK-56",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 42000,
+    "price": 46200,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3b70554abc163aa1"
+    },
+    "id": "e545a29f-3549-4e79-ab02-dc312bf2a12e",
+    "name": "LEGO (0,5 кг)",
+    "article": "МАК-42",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 17800,
+    "price": 19580,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbbfe7015276978dbf"
+    },
+    "id": "3092182a-4fb9-400d-a830-0d804e1c9af1",
+    "name": "LEGO (1 кг)",
+    "article": "МАК-42",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 35500,
+    "price": 39050,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba2f3856c6e95251b"
+    },
+    "id": "bf1fe4a5-82e1-4a15-8c21-ee2fa60f575a",
+    "name": "Лего контейнер Гранд (128)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 65000,
+    "price": 71500,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd56c0e77525cc174"
+    },
+    "id": "15ac8e76-7c21-4c75-b03b-51bb1c947d3a",
+    "name": "Лего контейнер Гранд (194)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 68000,
+    "price": 74800,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5024c2c3e1f34af3"
+    },
+    "id": "bfcf3fff-2d88-4270-99c1-7b3757fc5443",
+    "name": "Лего контейнер Гранд (158)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb1d7af2dd9f469e12"
+    },
+    "id": "a6002b89-eec9-4ddb-bd3f-4dbfcd49004b",
+    "name": "Лего Хэнди (56)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 35000,
+    "price": 38500,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3e51478a029f3433"
+    },
+    "id": "a95b1c5c-f56a-4ec2-93d9-ff6452ef4b7b",
+    "name": "Лего Хэнди (97)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 42000,
+    "price": 46200,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb626fecca004af2f1"
+    },
+    "id": "23130393-96a7-4913-b997-393fed09b3b2",
+    "name": "Лего Хэнди (79)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 44000,
+    "price": 48400,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb612137dd3aa800ac"
+    },
+    "id": "02cc8dcf-6dfa-47b7-84a7-c7d39529a965",
+    "name": "Лего Хэнди (112)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 60000,
+    "price": 66000,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb718ce5aba1a8940d"
+    },
+    "id": "15f248c6-7177-4997-9969-0ad7023fb696",
+    "name": "Лего Хэнди (158)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb34766ce6e487ce9f"
+    },
+    "id": "8a27f28a-eb1a-4b3d-ad74-e4eafd249d38",
+    "name": "Лего Хэнди (194)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb3e1672468179fb4"
+    },
+    "id": "88e4e473-dd5e-45b1-a6aa-06524e34a654",
+    "name": "(МИШОК МАЛЕНКЫЙ)",
+    "article": "LEGO-64",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 36000,
+    "price": 39600,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba4385d33a5459e1a"
+    },
+    "id": "d2506d1a-6fe6-4f8c-a7ee-4078e29b48b9",
+    "name": "(МИШОК МАЛЕНКЫЙ)",
+    "article": "LEGO-79",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 32000,
+    "price": 35200,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbbff323f822738dac"
+    },
+    "id": "31b367e0-8c01-4ef9-b7ee-8c4f4f5a77a8",
+    "name": "(МИШОК МАЛЕНКЫЙ)",
+    "article": "LEGO-97",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 35000,
+    "price": 38500,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb67ee9ddc3ddf0b3e"
+    },
+    "id": "705ea323-7bec-4fcc-8059-f8d81d97035e",
+    "name": "(МИШОК МАЛЕНКЫЙ)",
+    "article": "LEGO-215",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 40000,
+    "price": 44000,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3c99d94cbd940951"
+    },
+    "id": "e6881d24-45a1-47ae-be2e-85617263bdd9",
+    "name": "(МИШОК)",
+    "article": "LEGO-480",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 49000,
+    "price": 53900,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd41641d0394f6527"
+    },
+    "id": "8641e1cd-1956-4884-9e85-6fc517f9aa99",
+    "name": "(МИШОК )",
+    "article": "LEGO-192",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 73000,
+    "price": 80300,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbff09d0580da28334"
+    },
+    "id": "41074849-76ce-42f7-a72b-d78b04487480",
+    "name": "(МИШОК )",
+    "article": "LEGO-237",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 78000,
+    "price": 85800,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5a40d3b93a9a3030"
+    },
+    "id": "879c6f25-d2cf-4676-9793-a99fb10dff16",
+    "name": "(МИШОК СРЕДНЫЙ)",
+    "article": "LEGO-291",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 86000,
+    "price": 94600,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfc92a3741dfc10e9"
+    },
+    "id": "27cb990c-2747-4692-aaab-b35619f71513",
+    "name": "(МИШОК)",
+    "article": "LEGO-645",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 104000,
+    "price": 114400,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb0b2ea290e280fa1"
+    },
+    "id": "9479c93d-5af6-47f7-9eaa-6d406f6425b0",
+    "name": "(МИШОК)",
+    "article": "LEGO-1440",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 145000,
+    "price": 159500,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb75cc25388b0d3c86"
+    },
+    "id": "9676aaf6-6dfe-458f-b8c7-3fd76fe5f650",
+    "name": "(МИШОК)",
+    "article": "LEGO-394",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 170000,
+    "price": 187000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf63305d126d0ce1a"
+    },
+    "id": "8fe276f6-0d5b-410b-93fc-e38a5539ddee",
+    "name": "(МИШОК)",
+    "article": "LEGO-592",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 190000,
+    "price": 209000,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb01af4c804ce397df"
+    },
+    "id": "12c2101e-a8ae-4fdd-9bd4-ddab821dc91b",
+    "name": "(МИШОК)",
+    "article": "LEGO-484",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 200000,
+    "price": 220000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb59d5924cb9b2b3b"
+    },
+    "id": "84c02981-65e0-4a67-80db-b54877e8e44c",
+    "name": "(МИШОК)",
+    "article": "LEGO-1300",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 219000,
+    "price": 240900,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb51a660f7aee61af9"
+    },
+    "id": "95585c86-60bf-4cc8-a22c-8f9b624f8cff",
+    "name": "(МИШОК)",
+    "article": "LEGO-2890",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 260000,
+    "price": 286000,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd7fad6cd75bfe7f2"
+    },
+    "id": "7a6f3e05-6ef7-4dc0-90db-ddb40d803aff",
+    "name": "(МИШОК)",
+    "article": "LEGO-134",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 65000,
+    "price": 71500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb08aba7de7bb03acc"
+    },
+    "id": "ed3bea66-d5ab-4fb5-a9aa-ecb664226122",
+    "name": "(МИШОК)",
+    "article": "LEGO-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 75000,
+    "price": 82500,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba7ece29fbbf2d1e5"
+    },
+    "id": "a9e85423-25a1-4f37-a027-86431a123738",
+    "name": "(МИШОК)",
+    "article": "LEGO-204",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 85000,
+    "price": 93500,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb409bc68d12eea6f5"
+    },
+    "id": "464286d9-5238-4b4f-ad56-10fe6759ee9b",
+    "name": "(МИШОК)",
+    "article": "LEGO-262",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 110000,
+    "price": 121000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb95ba299f23ef1304"
+    },
+    "id": "9ba51c07-2cb1-41c9-ad3f-d36d23c1bfe0",
+    "name": "(МИШОК)",
+    "article": "LEGO-440",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 100000,
+    "price": 110000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe41f3b2901b385c2"
+    },
+    "id": "e1d0f7cc-3e95-4cd9-9eee-f477acdcdeaf",
+    "name": "(МИШОК)",
+    "article": "LEGO-970",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 124000,
+    "price": 136400,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb10beb2cf97ffdd5f"
+    },
+    "id": "49a36c08-c77b-4fcd-8526-6f4b209d444c",
+    "name": "(МИШОК)",
+    "article": "LEGO-322",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 135000,
+    "price": 148500,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb998fc624c7399b45"
+    },
+    "id": "bbbeaf70-0ea4-421c-888b-33a934416c94",
+    "name": "(МИШОК)",
+    "article": "LEGO-398",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 135000,
+    "price": 148500,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb018392504223a706"
+    },
+    "id": "fc93d871-7820-4111-a619-764ade8d6ea7",
+    "name": "(МИШОК)",
+    "article": "LEGO-870",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 170000,
+    "price": 187000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb74978c6faa329960"
+    },
+    "id": "384aae04-f4f9-4f43-ad74-3ce59f76ef17",
+    "name": "(МИШОК)",
+    "article": "LEGO-1930",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 220000,
+    "price": 242000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbba7d22d60b2fa909"
+    },
+    "id": "7aec4fb4-5d92-43f1-bc24-e1b288dafe9b",
+    "name": "Лего Домик мозаика 24",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 7000,
+    "price": 7700,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbcfd4b8bc6eb60e9b"
+    },
+    "id": "63436cf6-80c4-495e-839f-063ccd59bf9e",
+    "name": "Лего мозаика (120) (Контейнер)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 36000,
+    "price": 39600,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb740e8c4ad3c81a51"
+    },
+    "id": "95bade2a-423a-4125-9adc-6419c03c7126",
+    "name": "Лего мозаика (240) Челак",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbd7ccb096149e1963"
+    },
+    "id": "4f23e344-fa06-42c1-a758-450d53fd6f5c",
+    "name": "Лего мозаика (240)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 45000,
+    "price": 49500,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbe1f38211624c432f"
+    },
+    "id": "14074b11-1b7a-489d-bc61-1ee54d73fa66",
+    "name": "Лего мозаика (486) (Замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 100000,
+    "price": 110000,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb82ee941891eb8483"
+    },
+    "id": "fc652a6b-a567-4a9c-b75b-a3d267a21178",
+    "name": "Лего мозаика (720) (Коп)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 130000,
+    "price": 143000,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.275Z",
+    "updatedAt": "2026-02-12T10:48:27.275Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb77f9fe7259111cf6"
+    },
+    "id": "2e6883f9-3b69-4797-9540-cfe2b99e07aa",
+    "name": "Лего мозаика (970) (Коп)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 175000,
+    "price": 192500,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdb58e723bab590e4"
+    },
+    "id": "7dbd322f-7087-45d0-9d3b-cb76e8bb6ae1",
+    "name": "Лего мозаика (1450) (Коп)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 270000,
+    "price": 297000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb092466ba27d3bac1"
+    },
+    "id": "c35c2a7c-fc27-426a-a4d8-38382ca599ba",
+    "name": "Лего Патрон (104) (Контейнер)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 30000,
+    "price": 33000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6541db452c6d2a76"
+    },
+    "id": "d6cc03b2-c829-4eec-b451-ae0abc198bd1",
+    "name": "Лего Патрон (130) V (Контейнер)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 40000,
+    "price": 44000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb53649623e7138412"
+    },
+    "id": "09aa0392-d92e-4604-9c5c-434e988b43d8",
+    "name": "Лего Патрон (260) (Коп)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 54000,
+    "price": 59400,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba942610c48f17ffd"
+    },
+    "id": "a744dcad-c03f-473b-9b1e-21d96d071e31",
+    "name": "Лего Патрон (260) (Челак)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 72000,
+    "price": 79200,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc2983d38e602c7a3"
+    },
+    "id": "4a216c93-e812-432f-9c83-8c05e718b96f",
+    "name": "Лего Патрон (530) (Замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 125000,
+    "price": 137500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6395aeaa0fed6a4f"
+    },
+    "id": "c381bc10-2368-4ff6-b641-1c6faad642b0",
+    "name": "Лего Патрон (780) (Замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 162000,
+    "price": 178200,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc021f2443358fef4"
+    },
+    "id": "69854fe4-679f-4876-8b74-5e31e1e05cf5",
+    "name": "Лего Патрон (1050) (Замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 240000,
+    "price": 264000,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6e4f1b3bac1830fd"
+    },
+    "id": "fe54e6ec-51f3-4f48-b1cd-8de75405151f",
+    "name": "Лего Патрон (1570) (Замок)",
+    "article": "",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 334000,
+    "price": 367400,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9e7220f118f91b07"
+    },
+    "id": "8414264b-d43a-4591-bf7c-7ec691b46a3e",
+    "name": "(САВАТЧА)",
+    "article": "LEGO-44",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14000,
+    "price": 15400,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc904456375e0248c"
+    },
+    "id": "ff304edd-7189-4fd1-895a-5e4b45dd2776",
+    "name": "(САВАТЧА)",
+    "article": "LEGO-111",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 18000,
+    "price": 19800,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdcd00242230218ec"
+    },
+    "id": "9c14f00c-22e2-47fa-be24-d5d03bc4bf27",
+    "name": "(САВАТЧА)",
+    "article": "LEGO-240",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbee00c127fcac8f02"
+    },
+    "id": "0cfcf65f-8e6a-4906-a413-e9bce86b5d76",
+    "name": "(КОНТЕЙНЕР)",
+    "article": "LEGO-194",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 80000,
+    "price": 88000,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf75e05d42323377a"
+    },
+    "id": "5b82e1d6-bf7d-4c3b-ad09-75532349c689",
+    "name": "Болалар ошхона буюмлари \"Чойнак\" №1",
+    "article": "Мак-138",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbcf8e4ab03b99f5a8"
+    },
+    "id": "f3866e62-0889-4ba4-94b8-30a52aec69b4",
+    "name": "Болалар ошхона буюмлари \"Графин\" №2",
+    "article": "Мак-139",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 25000,
+    "price": 27500,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba1a18094ef76964d"
+    },
+    "id": "8df81532-db22-4601-8ce1-550c05357fbf",
+    "name": "Болалар ошхона буюмлари \"Газ Плита\" №3",
+    "article": "Мак-140",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 28000,
+    "price": 30800,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3d14087e0f38d63d"
+    },
+    "id": "1e11e279-1d4b-4be8-a65f-9cbd242e4fc2",
+    "name": "Болалар ошхона буюмлари \"Кичик Пекар\" №4",
+    "article": "МАК-141",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14000,
+    "price": 15400,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbca673634e7cf11b9"
+    },
+    "id": "ca61c6c9-7c9e-4671-a815-325b7096604f",
+    "name": "Болалар ошхона буюмлари \"Мини графин набор \" №5",
+    "article": "МАК-142",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 14000,
+    "price": 15400,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6937da9efbbb5ef4"
+    },
+    "id": "74e28f80-cd7d-49cf-bdcb-5e364c2ab9dc",
+    "name": "Лего (Челак 12л) (177)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbae64cdd9c941f7a2"
+    },
+    "id": "811f8f30-e46e-4f8c-8271-1cb495ca074c",
+    "name": "Лего (Челак 12л) (72)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 60000,
+    "price": 66000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba83833a21494878b"
+    },
+    "id": "4abe480c-d148-4b5e-bbe6-ed2f13cf8668",
+    "name": "Лего (Челак 12л) (138)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb44bc14344bbc16b5"
+    },
+    "id": "f6c3f6e4-6226-457e-843e-92fad499254a",
+    "name": "Лего (Челак 12л) (312)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 100000,
+    "price": 110000,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc41747e23f08e088"
+    },
+    "id": "92c3750d-77ff-4845-8fce-522c760d71e5",
+    "name": "Лего (Челак 12л) (344)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 85000,
+    "price": 93500,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb19b6e28203cacbdc"
+    },
+    "id": "8fda8c8d-7109-4a84-83ff-d84dcaf04ba5",
+    "name": "Лего (Челак 12л) (800)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 105000,
+    "price": 115500,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6079d27f85ae8ffb"
+    },
+    "id": "606f8b60-0dbe-4130-b25c-10a42446c9eb",
+    "name": "Лего (Челак 12л)",
+    "article": "Мак-162",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfb4aa70456b81625"
+    },
+    "id": "69190e31-1c5d-444e-8a2f-7793c1e25c81",
+    "name": "Лего Челак 8 л (235)",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 55000,
+    "price": 60500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5bc2700d62a0eb7b"
+    },
+    "id": "ee397caf-66bc-44b4-92f0-a3173abe4239",
+    "name": "Лего Челак 8 л (107)",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 47000,
+    "price": 51700,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb54435b634e129336"
+    },
+    "id": "2d8fe83c-61f1-42f3-b591-198dff235eda",
+    "name": "Лего Челак 8 л (252) мозаика",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 70000,
+    "price": 77000,
+    "description": "",
+    "minStock": 39,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc35fe2d04befc7de"
+    },
+    "id": "a93d6b39-92eb-4dc3-9dcb-c132718046f7",
+    "name": "Лего Челак 8 л (560)",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 65000,
+    "price": 71500,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3bd65fc477e31bee"
+    },
+    "id": "9d9e093d-c653-46c1-8aa8-610135f64c5c",
+    "name": "Лего Челак 8 л (66)",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 44000,
+    "price": 48400,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba0e0d5df79c69266"
+    },
+    "id": "394ecebd-9142-4e0f-8c76-06d7092d0da0",
+    "name": "Лего Челак 8 л (91)",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 51000,
+    "price": 56100,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb91c262c99372b565"
+    },
+    "id": "3344bd55-42ec-47ae-8c9e-a48bf9dd4ec4",
+    "name": "Лего Челак 8 л",
+    "article": "Мак-163",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb944da8561a132baa"
+    },
+    "id": "ea4dcb34-8a4d-4d87-8833-5124ca4d6f60",
+    "name": "Лего Челак 7 л (60)",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 39000,
+    "price": 42900,
+    "description": "",
+    "minStock": 37,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb48712f3a76946591"
+    },
+    "id": "744432fe-b70b-42ed-8f00-15b17816cada",
+    "name": "Лего Челак 7 л (73)",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 45000,
+    "price": 49500,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf9c2f7aa1db2caf8"
+    },
+    "id": "1d40e24e-32d5-4511-b3b7-7e43e1c748f6",
+    "name": "Лего Челак 7 л (180) Мозаика",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 55000,
+    "price": 60500,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4d94e646b0e8c064"
+    },
+    "id": "0f1c2ada-c460-40c0-b479-bde4bc0e11d3",
+    "name": "Лего Челак 7 л (93)",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 36000,
+    "price": 39600,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb04ee302c554bb296"
+    },
+    "id": "3967a8ad-d270-48e7-832c-72e103d3158d",
+    "name": "Лего Челак 7 л (400)",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 55000,
+    "price": 60500,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb54c6b200e5083b92"
+    },
+    "id": "481de836-bd27-4bf1-ab59-549849398777",
+    "name": "Лего Челак 7 л (205)",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 45000,
+    "price": 49500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf079125c414bca55"
+    },
+    "id": "037d583a-1100-4a9d-b0d5-4d1ebcdc3f77",
+    "name": "Лего Челак 7 л",
+    "article": "МАК-164",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbaca34249911dbf2f"
+    },
+    "id": "e649447d-0458-4d9a-b522-b5e65c644138",
+    "name": "Лего Челак 5,5л (67)",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 35000,
+    "price": 38500,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffba1ad4a68c0155409"
+    },
+    "id": "9450ebca-b333-40bd-a8e8-7842f6dd7ee6",
+    "name": "Лего Челак 5,5л (360)",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 47000,
+    "price": 51700,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb38f6c7207aabe2f8"
+    },
+    "id": "89717bb5-e214-4596-b066-6d9ebdcfdd09",
+    "name": "Лего Челак 5,5л (54)",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 35000,
+    "price": 38500,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2b7f24e677f84655"
+    },
+    "id": "0cde5765-c034-4671-8cb9-34c56bc36fc8",
+    "name": "Лего Челак 5,5л (83)",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 32000,
+    "price": 35200,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb9014e42b4d79c9b2"
+    },
+    "id": "9a0f8c73-6f16-411b-a2b1-d9d9e94ff588",
+    "name": "Лего Челак 5,5л (185)",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 42000,
+    "price": 46200,
+    "description": "",
+    "minStock": 38,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdc7c5473c98c6623"
+    },
+    "id": "e8bec9ed-f038-49c7-beac-ebf03948e437",
+    "name": "Лего Челак 5,5л (150) Мозаика",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 43000,
+    "price": 47300,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdad182e83f80d1ac"
+    },
+    "id": "c9062357-9363-41dc-91af-0a48e0ba7036",
+    "name": "Лего Челак 5,5л",
+    "article": "Мак-165",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb3f29e27f38217319"
+    },
+    "id": "669bbc3a-ba75-47a3-a7d7-c9b4d79ad4b3",
+    "name": "Лего Челак 3л (48)",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 17500,
+    "price": 19250,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb45bae32ee2deb376"
+    },
+    "id": "9efb0f0b-7732-40cf-9799-d594190b206c",
+    "name": "Лего Челак 3л (99)",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 21000,
+    "price": 23100,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbdfa1ff792d609469"
+    },
+    "id": "3477c53d-9e9a-4b1e-bec6-5bed7e86bb8a",
+    "name": "Лего Челак 3л (200)",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 26500,
+    "price": 29150,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb9b7858fa31c1895"
+    },
+    "id": "df4bcf7a-ce46-46d7-9bc0-2651b2e2af68",
+    "name": "Лего Челак 3л (84) Мозаика",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 23000,
+    "price": 25300,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5e802105a6c74b49"
+    },
+    "id": "945473e1-ba72-46ae-84bc-d5d361d8aa54",
+    "name": "Лего Челак 3л",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb95f458ec6267e917"
+    },
+    "id": "d558c922-8649-494e-b3f1-4fc59bcbe33d",
+    "name": "Лего Челак 3л",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 33,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbac14a02feacfa5a5"
+    },
+    "id": "de543e4d-c4d2-4ffb-a063-ef20e51a542c",
+    "name": "Лего Челак 3л",
+    "article": "Мак-166",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbf8aeeca737e3a8b9"
+    },
+    "id": "2b5e7c9d-5dfb-4720-850b-2e707b1d6349",
+    "name": "Лего Челак 2,5л (36)",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 15000,
+    "price": 16500,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6e6226d3de960902"
+    },
+    "id": "9bba63de-7ab2-4f6d-9075-bd7ddcf8316b",
+    "name": "Лего Челак 2,5л (66) мозаика",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 20000,
+    "price": 22000,
+    "description": "",
+    "minStock": 32,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb5fae7b93578bc95b"
+    },
+    "id": "025c9a6c-a43a-4782-b998-2f2bd1b6e8bc",
+    "name": "Лего Челак 2,5л (82)",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 18000,
+    "price": 19800,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2e4b42d149882396"
+    },
+    "id": "4654a48d-8632-44cf-9437-e177868e213c",
+    "name": "Лего Челак 2,5л (160)",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 22000,
+    "price": 24200,
+    "description": "",
+    "minStock": 36,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbc83057b1eaf34514"
+    },
+    "id": "23dccf06-5738-439f-8f85-10bff2d8b1e7",
+    "name": "Лего Челак 2,5л ()",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbb565372b5cee393f"
+    },
+    "id": "210c8e8c-8367-4284-9891-eabcf9fa6ad2",
+    "name": "Лего Челак 2,5л ()",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb6797f3c41b599e2b"
+    },
+    "id": "8ae7bbd8-27cb-4827-9b58-66cde1723951",
+    "name": "Лего Челак 2,5л ()",
+    "article": "Мак-167",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.276Z",
+    "updatedAt": "2026-02-12T10:48:27.276Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb915eda44169b2e7d"
+    },
+    "id": "c59e97cf-c302-41b2-ba2b-12b89ca7836e",
+    "name": "Лего Челак 1,3л (24)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 10500,
+    "price": 11550,
+    "description": "",
+    "minStock": 30,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb2ab43d26fbd29804"
+    },
+    "id": "8c378cea-6bef-4943-8400-268e5c22e1cf",
+    "name": "Лего Челак 1,3л (30)мозаика",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12000,
+    "price": 13200,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb59af75461befac7c"
+    },
+    "id": "0070edf4-4653-4b45-8ca2-97845159ce73",
+    "name": "Лего Челак 1,3л (50)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 12000,
+    "price": 13200,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbac04a4baa49b1257"
+    },
+    "id": "ee5294a6-01b4-46d5-970e-c81fe1578e5b",
+    "name": "Лего Челак 1,3л (80)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 13000,
+    "price": 14300,
+    "description": "",
+    "minStock": 31,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb4b14f8a0dcd0621a"
+    },
+    "id": "7793d80e-5b71-4350-9422-59dcada25c7e",
+    "name": "Лего Челак 1,3л (80)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 35,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffb712383e9cea358c9"
+    },
+    "id": "229da169-164e-427e-ae90-c246a304cb65",
+    "name": "Лего Челак 1,3л (80)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 34,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  },
+  {
+    "_id": {
+      "$oid": "698daffbfd8f86bff97395f2"
+    },
+    "id": "5a2e65f7-65a2-4ad9-acc0-dad4938c90fb",
+    "name": "Лего Челак 1,3л (80)",
+    "article": "МAK-168",
+    "category": "",
+    "type": "makplast",
+    "stock": 0,
+    "cost": 0,
+    "price": 0,
+    "description": "",
+    "minStock": 40,
+    "image": "",
+    "createdAt": "2026-02-12T10:48:27.277Z",
+    "updatedAt": "2026-02-12T10:48:27.277Z"
+  }
+]

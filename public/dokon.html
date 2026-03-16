@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="robots" content="noindex">
+    
+    <title>Akil Box | Xitoy Mahsultolari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dokonstyle.css">
+</head>
+<body>
+    <!-- Modal oynasi sotish uchun -->
+    <div class="modal fade" id="saleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-cash-register"></i> Sotishni tasdiqlash</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="saleProductId">
+                    <input type="hidden" id="saleProductType">
+                    <input type="hidden" id="saleProductCost">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Mahsulot nomi</label>
+                        <input type="text" class="form-control" id="saleProductName" readonly>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Miqdor</label>
+                            <input type="number" class="form-control" id="saleQuantity" min="1" value="1">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Sotish narxi (UZS)</label>
+                            <input type="number" class="form-control" id="salePrice" min="0" step="1000">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Sotish sanasi</label>
+                        <input type="date" class="form-control" id="saleDate">
+                    </div>
+                    <div class="alert alert-info">
+                        <strong>Jami:</strong> <span id="saleTotal">0</span> UZS
+                    </div>
+                    <div id="profitCalculation" class="alert alert-success d-none">
+                        <strong>Foyda:</strong> <span id="profitAmount">0</span> UZS
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-success" onclick="confirmSaleAction()">
+                        <i class="fas fa-check"></i> Sotishni tasdiqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi mahsulot qo'shish/tahrirlash uchun -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-box"></i> Mahsulot qo'shish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editProductId">
+                    <input type="hidden" id="editProductType">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Mahsulot nomi</label>
+                                <input type="text" class="form-control" id="productName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Artikul</label>
+                                <input type="text" class="form-control" id="productArticle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Xarajat narxi (UZS)</label>
+                                <input type="number" class="form-control" id="productCost" min="0" step="1000" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Standart sotish narxi (UZS)</label>
+                                <input type="number" class="form-control" id="productPrice" min="0" step="1000" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Boshlang'ich qoldiq</label>
+                                <input type="number" class="form-control" id="productStock" min="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Kategoriya</label>
+                                <input type="text" class="form-control" id="productCategory" placeholder="Misol: Mashinalar">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Minimal qoldiq</label>
+                                <input type="number" class="form-control" id="productMinStock" min="0" value="5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tavsif</label>
+                        <textarea class="form-control" id="productDescription" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Rasm</label>
+                        <input type="file" class="form-control" id="productImage" accept="image/*" onchange="previewImage(this)">
+                        <small class="text-muted">Rasm hajmi 5MB dan oshmasin (jpg, png, gif, webp)</small>
+                        <div id="imagePreview" class="mt-2"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-primary" onclick="saveProduct()">
+                        <i class="fas fa-save"></i> Saqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal oynasi foydalanuvchi qo'shish/tahrirlash uchun -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-user-plus"></i> Foydalanuvchi qo'shish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editUserId">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Foydalanuvchi nomi</label>
+                        <input type="text" class="form-control" id="userUsername" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">To'liq ismi</label>
+                        <input type="text" class="form-control" id="userFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Parol</label>
+                        <input type="password" class="form-control" id="userPassword">
+                        <small class="text-muted">Agar parolni o'zgartirmoqchi bo'lmasangiz, bo'sh qoldiring</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Roli (raqam bilan kiriting)</label>
+                        <input type="number" class="form-control" id="userRole" min="1" max="4" value="1">
+                        <div class="mt-2">
+                            <small class="text-muted">
+                                <strong>Rollar raqamlari:</strong><br>
+                                1 - Sotuvchi<br>
+                                2 - Omborchi<br>
+                                3 - Administrator<br>
+                                4 - Super Administrator
+                            </small>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="userEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Telefon raqami</label>
+                        <input type="text" class="form-control" id="userPhone">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Holati</label>
+                        <select class="form-select" id="userStatus">
+                            <option value="active">Faol</option>
+                            <option value="inactive">Nofaol</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-primary" onclick="saveUser()">
+                        <i class="fas fa-save"></i> Saqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi to'lov qo'shish uchun -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-money-bill-wave"></i> To'lov qo'shish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Turi</label>
+                        <select class="form-select" id="paymentType" onchange="updatePaymentDebtInfo()">
+                            <option value="akitoy">Akil Box</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Joriy qarzdorlik</label>
+                        <div class="alert alert-warning py-2">
+                            <i class="fas fa-coins me-2"></i>
+                            <span id="currentDebtAmount">0 UZS</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">To'lov miqdori (UZS)</label>
+                        <input type="number" class="form-control" id="paymentAmount" min="0" step="1000" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Sana</label>
+                        <input type="date" class="form-control" id="paymentDate">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Izoh</label>
+                        <textarea class="form-control" id="paymentDescription" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-success" onclick="addWarehousePayment()">
+                        <i class="fas fa-check"></i> To'lov qilish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigatsiya -->
+    <nav class="navbar navbar-expand-lg navbar-dark dokon-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-store me-2"></i> Akil Box
+                <span class="navbar-subtitle">Xitoy Mahsulotlari</span>
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-warning btn-sm me-3" onclick="testReports()">
+                    <i class="fas fa-bug"></i> Test
+                </button>
+                
+                <button id="fullMonthResetBtn" class="btn btn-outline-danger btn-sm me-3 d-none" onclick="confirmFullMonthReset()">
+                    <i class="fas fa-broom"></i> To'liq tozalash
+                </button>
+                
+                <button id="clearReportsBtn" class="btn btn-outline-danger btn-sm me-3 d-none" onclick="confirmClearMonthReports()">
+                    <i class="fas fa-trash-alt"></i> Oy tozalash
+                </button>
+                <button id="themeToggle" class="btn btn-outline-light btn-sm me-3" title="Tun/kun rejimi">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="dropdown me-3">
+                    <button class="btn btn-outline-light btn-sm position-relative" type="button" 
+                            id="notificationsDropdown" data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
+                              id="notificationCount">
+                            0
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="min-width: 300px; max-width: 400px;" 
+                        aria-labelledby="notificationsDropdown">
+                        <li class="dropdown-header d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-bell me-2"></i>Bildirishnomalar</span>
+                            <button class="btn btn-sm btn-link text-danger p-0" onclick="clearAllNotifications()">
+                                Tozalash
+                            </button>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <div id="notificationsList" style="max-height: 400px; overflow-y: auto;">
+                            <div class="px-3 py-2 text-center text-muted">
+                                <i class="fas fa-bell-slash fa-lg mb-2"></i>
+                                <p>Hozircha bildirishnomalar yo'q</p>
+                            </div>
+                        </div>
+                        <li class="dropdown-footer text-center py-2">
+                            <small class="text-muted">Akil Box tizimi</small>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown me-3">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="periodDropdown" data-bs-toggle="dropdown">
+                        <i class="fas fa-calendar-alt"></i> <span id="currentPeriod">Yanvar 2024</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="px-3 py-2">
+                            <select class="form-select mb-2" id="monthSelect">
+                                <option value="0">Yanvar</option>
+                                <option value="1">Fevral</option>
+                                <option value="2">Mart</option>
+                                <option value="3">Aprel</option>
+                                <option value="4">May</option>
+                                <option value="5">Iyun</option>
+                                <option value="6">Iyul</option>
+                                <option value="7">Avgust</option>
+                                <option value="8">Sentabr</option>
+                                <option value="9">Oktabr</option>
+                                <option value="10">Noyabr</option>
+                                <option value="11">Dekabr</option>
+                            </select>
+                            <input type="number" class="form-control" id="yearSelect" value="2024" min="2020" max="2030">
+                            <button class="btn btn-primary btn-sm mt-2 w-100" onclick="changePeriod()">Qo'llash</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="user-info">
+                    <span id="userRoleBadge" class="role-badge role-admin">Administrator</span>
+                    <span id="userName" class="ms-2"></span>
+                </div>
+                <button class="btn btn-outline-light btn-sm ms-3" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Chiqish
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Asosiy kontent -->
+    <div class="container-fluid mt-4">
+        <ul class="nav nav-tabs" id="mainTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#akilbox">
+                    <i class="fas fa-robot"></i> Akil Box
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#warehouse">
+                    <i class="fas fa-warehouse"></i> Ombor
+                </a>
+            </li>
+            <li class="nav-item refund-tab">
+                <a class="nav-link" data-bs-toggle="tab" href="#refund">
+                    <i class="fas fa-undo"></i> Qaytarish
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bulk-warehouse">
+                    <i class="fas fa-layer-group me-1"></i>Ommaviy qabul
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#invoice">
+                    <i class="fas fa-receipt"></i> Hisob-faktura
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#nasiya">
+                    <i class="fas fa-credit-card"></i> Nasiya
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#reports">
+                    <i class="fas fa-chart-bar"></i> Hisobotlar
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#users">
+                    <i class="fas fa-users"></i> Foydalanuvchilar
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <!-- Akil Box -->
+            <div class="tab-pane fade show active" id="akilbox">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-0"><i class="fas fa-robot me-2"></i>Akil Box mahsulotlari</h5>
+                                <div class="d-flex mt-2 mt-sm-0">
+                                    <input type="text" class="form-control me-2" id="searchAkil" placeholder="Mahsulot qidirish..." oninput="searchProducts('akitoy')">
+                                    <button class="btn btn-success" onclick="showAddProductModal('akitoy')">
+                                        <i class="fas fa-plus"></i> Qo'shish
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="akitoyProducts" class="product-grid">
+                                    <!-- Mahsulotlar kartochkalari shu yerda render qilinadi -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ombor (faqat Akil Box) -->
+            <div class="tab-pane fade" id="warehouse">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-0"><i class="fas fa-robot me-2"></i>Akil Box Ombori</h5>
+                                <button class="btn btn-sm btn-outline-light mt-2 mt-sm-0" onclick="showPaymentModalForType('akitoy')">
+                                    <i class="fas fa-money-bill-wave me-1"></i> To'lov
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0">Mahsulot qo'shish</h6>
+                                        <div class="text-end">
+                                            <div class="small text-muted">Joriy qarzdorlik:</div>
+                                            <div class="fw-bold text-danger" id="akitoyCurrentDebt">0 UZS</div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Mahsulot</label>
+                                        <div class="position-relative">
+                                            <input type="text" 
+                                                   class="form-control" 
+                                                   id="warehouseAkitoyProductSearch" 
+                                                   placeholder="Mahsulot nomini yozing..." 
+                                                   autocomplete="off">
+                                            <input type="hidden" id="warehouseAkitoyProductId">
+                                            <div id="warehouseAkitoySuggestions" 
+                                                 class="autocomplete-suggestions" 
+                                                 style="display: none; position: absolute; width: 100%; z-index: 1000;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label">Miqdor</label>
+                                            <input type="number" class="form-control" id="warehouseAkitoyQuantity" min="1" value="1" oninput="calculateWarehouseTotal()">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Xarajat narxi (dona)</label>
+                                            <input type="number" class="form-control" id="warehouseAkitoyCost" min="0" step="1000" placeholder="UZS" oninput="calculateWarehouseTotal()">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Umumiy xarajat</label>
+                                        <div class="alert alert-secondary py-2">
+                                            <i class="fas fa-calculator me-2"></i>
+                                            <span id="akitoyWarehouseTotal">0 UZS</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Sanasi</label>
+                                        <input type="date" class="form-control" id="warehouseAkitoyDate">
+                                    </div>
+                                    <button class="btn btn-primary w-100" onclick="addToWarehouse('akitoy')">
+                                        <i class="fas fa-box-circle-check"></i> Omborga qabul qilish
+                                    </button>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div>
+                                    <h6 class="mb-3">So'nggi operatsiyalar</h6>
+                                    <div id="warehouseAkitoyLogs" style="max-height: 300px; overflow-y: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Qaytarish -->
+            <div class="tab-pane fade" id="refund">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-0"><i class="fas fa-undo me-2"></i>Mahsulotni qaytarish</h5>
+                                <div class="d-flex mt-2 mt-sm-0">
+                                    <input type="number" id="refundRowsCount" min="1" max="50" value="5"
+                                           class="form-control form-control-sm me-2" style="width: 70px;">
+                                    <button class="btn btn-sm btn-outline-light me-2" onclick="addMultipleRefundRows()"
+                                            title="Bir nechta qator qo'shish">
+                                        <i class="fas fa-layer-group"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-light me-2" onclick="addRefundRow()">
+                                        <i class="fas fa-plus"></i> Qator qo'shish
+                                    </button>
+                                    <button class="btn btn-sm btn-success" onclick="processRefundTable()">
+                                        <i class="fas fa-save me-1"></i>Qaytarishni amalga oshirish
+                                    </button>
+                                    <button class="btn btn-sm btn-info ms-2" onclick="generateRefundPDF()">
+                                        <i class="fas fa-file-pdf me-1"></i>PDF
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Sana</label>
+                                        <input type="date" class="form-control" id="refundDate">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Mijoz ismi (ixtiyoriy)</label>
+                                        <input type="text" class="form-control" id="refundCustomer" placeholder="Mijoz nomi">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Umumiy izoh</label>
+                                        <input type="text" class="form-control" id="refundGlobalDescription" placeholder="Qaytarish sababi">
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle">
+                                        <thead class="table-warning">
+                                            <tr>
+                                                <th>Mahsulot</th>
+                                                <th width="120">Miqdor</th>
+                                                <th width="150">Sotish narxi (UZS)</th>
+                                                <th width="150">Kirim narxi (UZS)</th>
+                                                <th width="150">Jami (UZS)</th>
+                                                <th width="50"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="refundItemsBody">
+                                            <!-- Строки будут добавляться динамически -->
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="table-secondary">
+                                                <td colspan="4" class="text-end fw-bold">Umumiy qaytarilgan summa:</td>
+                                                <td id="refundTotalAmount" class="fw-bold">0 UZS</td>
+                                                <td></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ommaviy qabul -->
+            <div class="tab-pane fade" id="bulk-warehouse">
+                <div class="container-fluid py-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                        <h4 id="bulkWarehouseTypeTitle"><i class="fas fa-robot me-2"></i>Akil Box - Ommaviy qabul</h4>
+                    </div>
+
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                            <span><i class="fas fa-table me-2"></i>Mahsulotlar ro'yxati</span>
+                            <div class="d-flex align-items-center mt-2 mt-sm-0">
+                                <input type="number" id="bulkRowsCount" min="1" max="50" value="5" class="form-control form-control-sm me-2" style="width: 70px;">
+                                <button class="btn btn-sm btn-outline-light me-2" onclick="addMultipleBulkRows()" title="Bir nechta qator qo'shish">
+                                    <i class="fas fa-layer-group"></i>
+                                </button>
+                                <button class="btn btn-sm btn-light me-2" onclick="addBulkWarehouseRow()">
+                                    <i class="fas fa-plus"></i> Qator qo'shish
+                                </button>
+                                <button class="btn btn-sm btn-success" onclick="saveBulkWarehouseReceive()">
+                                    <i class="fas fa-save me-1"></i>Omborga qo'shish
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label class="form-label fw-semibold">Qabul qilish sanasi</label>
+                                    <input type="date" id="bulkWarehouseDate" class="form-control" value="">
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Mahsulot</th>
+                                            <th>Miqdor (dona)</th>
+                                            <th>Kirim narxi (UZS)</th>
+                                            <th>Jami (UZS)</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bulkWarehouseItems">
+                                        <!-- Строки будут добавляться динамически -->
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="table-secondary fw-bold">
+                                            <td colspan="3" class="text-end">Umumiy summa:</td>
+                                            <td id="bulkWarehouseTotalAmount">0 UZS</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hisob-faktura -->
+            <div class="tab-pane fade" id="invoice">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-success text-white d-flex justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-0"><i class="fas fa-receipt me-2"></i>Hisob-faktura yaratish</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-4">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Mijoz ismi</label>
+                                        <input type="text" class="form-control" id="invoiceCustomer" placeholder="Mijoz nomi">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Telefon raqami</label>
+                                        <input type="text" class="form-control" id="invoicePhone" placeholder="+998">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Sanasi</label>
+                                        <input type="date" class="form-control" id="invoiceDate">
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <button class="btn btn-outline-success w-100" onclick="generateInvoice()">
+                                            <i class="fas fa-file-pdf"></i> PDF
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-4">
+                                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                                        <span><i class="fas fa-boxes me-2"></i>Mahsulotlar</span>
+                                        <div>
+                                            <input type="number" id="invoiceRowsCount" min="1" max="50" value="5"
+                                                   class="form-control form-control-sm me-2" style="width: 70px; display: inline-block;">
+                                            <button class="btn btn-sm btn-outline-primary me-2" onclick="addMultipleInvoiceRows()"
+                                                    title="Bir nechta qator qo'shish">
+                                                <i class="fas fa-layer-group"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-primary" onclick="addInvoiceRow()">
+                                                <i class="fas fa-plus"></i> Qator qo'shish
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered mb-0">
+                                                <thead class="table-success">
+                                                    <tr>
+                                                        <th>Mahsulot</th>
+                                                        <th>Miqdor (dona)</th>
+                                                        <th>Narx (UZS)</th>
+                                                        <th>Jami (UZS)</th>
+                                                        <th style="width: 60px;"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="invoiceItemsBody">
+                                                    <!-- Сюда будут добавляться строки -->
+                                                </tbody>
+                                                <tfoot class="table-light">
+                                                    <tr>
+                                                        <td colspan="3" class="text-end fw-bold">Umumiy summa:</td>
+                                                        <td id="invoiceTotalAmount">0 UZS</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-danger" onclick="clearInvoiceTable()">
+                                        <i class="fas fa-trash"></i> Tozalash
+                                    </button>
+                                    <button class="btn btn-success" onclick="generateInvoice()">
+                                        <i class="fas fa-check"></i> Hisob-fakturani tasdiqlash
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nasiya -->
+            <div class="tab-pane fade" id="nasiya">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-info text-white d-flex justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-0"><i class="fas fa-credit-card me-2"></i>Nasiya mijozlari va to'lov eslatmalari</h5>
+                                <div class="d-flex mt-2 mt-sm-0">
+                                    <button class="btn btn-light btn-sm me-2" onclick="showAddNasiyaClientModal()">
+                                        <i class="fas fa-user-plus"></i> Mijoz qo'shish
+                                    </button>
+                                    <button class="btn btn-warning btn-sm me-2" onclick="sendRemindersToAllUsers()" id="sendRemindersBtn">
+                                        <i class="fas fa-bell"></i> Eslatma yuborish
+                                    </button>
+                                    <button class="btn btn-success btn-sm" onclick="showCreateNasiyaSaleModal()">
+                                        <i class="fas fa-cart-plus"></i> Yangi nasiya
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="nasiyaSearchInput" 
+                                                   placeholder="Mijoz qidirish (nomi, telefon, manzil)" 
+                                                   oninput="searchNasiyaClients()">
+                                            <button class="btn btn-outline-secondary" type="button" onclick="resetNasiyaSearch()">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-end">
+                                        <div class="small text-muted">
+                                            <i class="fas fa-info-circle"></i> 
+                                            Jami: <span id="nasiyaTotalClients">0</span> mijoz
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-md-3">
+                                        <div class="card stat-card mb-0">
+                                            <div class="card-body text-center">
+                                                <h6 class="mb-2">Jami qarzdorlik</h6>
+                                                <h3 class="text-danger" id="totalNasiyaDebt">0 UZS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card stat-card mb-0">
+                                            <div class="card-body text-center">
+                                                <h6 class="mb-2">Faol mijozlar</h6>
+                                                <h3 class="text-primary" id="activeNasiyaClients">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card stat-card mb-0">
+                                            <div class="card-body text-center">
+                                                <h6 class="mb-2">Bugungi to'lovlar</h6>
+                                                <h3 class="text-success" id="todayNasiyaPayments">0 UZS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card stat-card mb-0">
+                                            <div class="card-body text-center">
+                                                <h6 class="mb-2">Kechikkan to'lovlar</h6>
+                                                <h3 class="text-warning" id="overdueNasiyaPayments">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-info">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Mijoz</th>
+                                                <th>Telefon</th>
+                                                <th>Manzil</th>
+                                                <th>Jami qarz</th>
+                                                <th>To'langan</th>
+                                                <th>Qoldiq</th>
+                                                <th>Holati</th>
+                                                <th>Oxirgi to'lov</th>
+                                                <th>Harakatlar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="nasiyaClientsTable">
+                                            <tr>
+                                                <td colspan="10" class="text-center py-4 text-muted">
+                                                    <i class="fas fa-users fa-2x mb-3 d-block"></i>
+                                                    Hozircha nasiya mijozlari yo'q
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="card mt-4">
+                                    <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center">
+                                        <h5 class="mb-0"><i class="fas fa-bell me-2"></i>To'lov eslatmalari</h5>
+                                        <div class="d-flex">
+                                            <span class="badge bg-light text-dark me-2" id="reminderCount">0 ta eslatma</span>
+                                            <button class="btn btn-sm btn-outline-light" onclick="showAllReminders()">
+                                                <i class="fas fa-eye"></i> Barchasini ko'rish
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row mb-3">
+                                            <div class="col-md-4">
+                                                <select class="form-select" id="reminderFilter" onchange="filterReminders()">
+                                                    <option value="all">Barcha eslatmalar</option>
+                                                    <option value="today">Bugungi</option>
+                                                    <option value="tomorrow">Ertangi</option>
+                                                    <option value="week">Haftalik</option>
+                                                    <option value="overdue">Kechikkan</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="date" class="form-control" id="reminderDateFilter" onchange="filterRemindersByDate()">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button class="btn btn-outline-warning w-100" onclick="markAllRemindersAsSent()">
+                                                    <i class="fas fa-check-double"></i> Barchasini yuborilgan deb belgilash
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="table-warning">
+                                                    <tr>
+                                                        <th>
+                                                            <input type="checkbox" id="selectAllReminders" onchange="toggleAllReminders()">
+                                                        </th>
+                                                        <th>Mijoz</th>
+                                                        <th>Telefon</th>
+                                                        <th>To'lov sanasi</th>
+                                                        <th>Miqdor</th>
+                                                        <th>Qoldiq</th>
+                                                        <th>Holati</th>
+                                                        <th>Eslatma</th>
+                                                        <th>Harakatlar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="nasiyaRemindersTable">
+                                                    <tr>
+                                                        <td colspan="9" class="text-center py-4 text-muted">
+                                                            <i class="fas fa-bell-slash fa-2x mb-3 d-block"></i>
+                                                            Hozircha eslatmalar yo'q
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hisobotlar -->
+            <div class="tab-pane fade" id="reports">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card stat-card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3">
+                                        <i class="fas fa-chart-pie fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Umumiy daromad</h6>
+                                        <h3 id="totalRevenue">0 UZS</h3>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary w-100" onclick="showFullReport()">
+                                    <i class="fas fa-eye"></i> To'liq hisobot
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card stat-card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3">
+                                        <i class="fas fa-coins fa-2x text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Umumiy foyda</h6>
+                                        <h3 id="totalProfit">0 UZS</h3>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-success w-100" onclick="showProfitReport()">
+                                    <i class="fas fa-chart-line"></i> Foyda hisoboti
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card stat-card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3">
+                                        <i class="fas fa-boxes fa-2x text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Ombordagi qiymat</h6>
+                                        <h3 id="totalWarehouseValue">0 UZS</h3>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-warning w-100" onclick="showWarehouseReport()">
+                                    <i class="fas fa-warehouse"></i> Ombor hisoboti
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-history me-2"></i>So'nggi operatsiyalar</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Sana</th>
+                                                <th>Mahsulot</th>
+                                                <th>Turi</th>
+                                                <th>Miqdor</th>
+                                                <th>Narx</th>
+                                                <th>Jami</th>
+                                                <th>Foyda</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="recentOperations">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foydalanuvchilar -->
+            <div class="tab-pane fade" id="users">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0"><i class="fas fa-users me-2"></i>Foydalanuvchilarni boshqarish</h5>
+                                <button class="btn btn-success" onclick="showAddUserModal()" id="addUserBtn">
+                                    <i class="fas fa-user-plus"></i> Foydalanuvchi qo'shish
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Foydalanuvchi nomi</th>
+                                                <th>To'liq ismi</th>
+                                                <th>Roli</th>
+                                                <th>Email</th>
+                                                <th>Telefon</th>
+                                                <th>Holati</th>
+                                                <th>Yaratilgan</th>
+                                                <th>Amallar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="usersTable">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-history me-2"></i>Foydalanuvchi harakatlari tarixi</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <select class="form-select" id="userLogsFilter" onchange="renderUserLogsTable()">
+                                        <option value="all">Barcha foydalanuvchilar</option>
+                                    </select>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-info">
+                                            <tr>
+                                                <th>Sana/Vaqt</th>
+                                                <th>Foydalanuvchi</th>
+                                                <th>Harakat</th>
+                                                <th>Tafsilotlar</th>
+                                                <th>IP manzil</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="userLogsTable">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi hisobotlar uchun -->
+    <div class="modal fade" id="reportModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title" id="reportModalTitle">Hisobot</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="chart-container">
+                                <canvas id="reportChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="reportStats">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="reportTable">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                    <button type="button" class="btn btn-success" onclick="downloadReport()">
+                        <i class="fas fa-download"></i> Yuklab olish
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="printReport()">
+                        <i class="fas fa-print"></i> Chop etish
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="generateReportPDF()">
+                        <i class="fas fa-file-pdf"></i> PDF yaratish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi PDF ko'rish uchun -->
+    <div class="modal fade" id="pdfPreviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="pdfPreviewModalLabel">Hisob-faktura PDF</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="pdfPreviewFrame" 
+                            style="width:100%; height:80vh; border:none;"
+                            title="Hisob-faktura PDF ko'rish oynasi">
+                    </iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                    <button type="button" class="btn btn-primary" onclick="printInvoice()">
+                        <i class="fas fa-print"></i> Chop etish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorDisplay" style="display:none; position:fixed; top:20px; right:20px; z-index:9999; max-width:400px;">
+        <div class="alert alert-danger" role="alert">
+            <strong id="errorTitle">Xatolik</strong>
+            <div id="errorMessage"></div>
+            <button class="btn btn-sm btn-outline-danger mt-2" onclick="document.getElementById('errorDisplay').style.display='none'">Yopish</button>
+        </div>
+    </div>
+
+    <!-- Modal для добавления клиента Nasiya -->
+    <div class="modal fade" id="nasiyaClientModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-user-plus"></i> Nasiya mijoz qo'shish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editNasiyaClientId">
+                    <div class="mb-3">
+                        <label class="form-label">Ismi *</label>
+                        <input type="text" class="form-control" id="nasiyaClientName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Telefon *</label>
+                        <input type="text" class="form-control" id="nasiyaClientPhone" required placeholder="+998">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Manzil</label>
+                        <input type="text" class="form-control" id="nasiyaClientAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Qo'shimcha ma'lumot</label>
+                        <textarea class="form-control" id="nasiyaClientDescription" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-primary" onclick="saveNasiyaClient()">
+                        <i class="fas fa-save"></i> Saqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal для создания продажи в рассрочку -->
+    <div class="modal fade" id="nasiyaSaleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-cart-plus"></i> Nasiya sotish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Mijoz *</label>
+                                <div class="position-relative">
+                                    <input type="text" 
+                                           class="form-control" 
+                                           id="nasiyaSaleClientSearch" 
+                                           placeholder="Mijoz nomini yozing..." 
+                                           autocomplete="off">
+                                    <input type="hidden" id="nasiyaSaleClientId">
+                                    <div id="nasiyaSaleClientSuggestions" 
+                                         class="autocomplete-suggestions" 
+                                         style="display: none; position: absolute; width: 100%; z-index: 1000; background: white; border: 1px solid #ddd; max-height: 200px; overflow-y: auto;">
+                                    </div>
+                                </div>
+                                <small class="text-muted">
+                                    <a href="javascript:void(0)" onclick="showAddNasiyaClientModal()">Yangi mijoz qo'shish</a>
+                                </small>
+                            </div>
+                            <div id="selectedClientInfo" class="alert alert-info d-none">
+                                <strong>Joriy qarz:</strong> <span id="currentClientDebt">0</span> UZS<br>
+                                <small id="clientPreviousPayments">Oldingi to'lovlar: 0 UZS</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">To'lov sanasi *</label>
+                                <input type="date" class="form-control" id="nasiyaPaymentDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Qo'shimcha ma'lumot</label>
+                                <textarea class="form-control" id="nasiyaSaleDescription" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h6 class="mb-0">Mahsulot qo'shish</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label">Mahsulot *</label>
+                                    <div class="position-relative">
+                                        <input type="text" 
+                                               class="form-control" 
+                                               id="nasiyaProductSearch" 
+                                               placeholder="Mahsulot nomini yozing..." 
+                                               autocomplete="off">
+                                        <input type="hidden" id="nasiyaProductId">
+                                        <div id="nasiyaProductSuggestions" 
+                                             class="autocomplete-suggestions" 
+                                             style="display: none; position: absolute; width: 100%; z-index: 1000; background: white; border: 1px solid #ddd; max-height: 200px; overflow-y: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Miqdor</label>
+                                    <input type="number" class="form-control" id="nasiyaQuantity" min="1" value="1">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label">Narx (UZS)</label>
+                                    <input type="number" class="form-control" id="nasiyaPrice" min="0" step="1000">
+                                </div>
+                                <div class="col-md-4 d-flex align-items-end">
+                                    <button class="btn btn-primary btn-sm mt-3" onclick="addToNasiyaCart()">
+                                        <i class="fas fa-plus"></i> Savatga qo'shish
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Mahsulot</th>
+                                    <th>Miqdor</th>
+                                    <th>Narx</th>
+                                    <th>Jami</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="nasiyaCartItems">
+                            </tbody>
+                            <tfoot>
+                                <tr class="table-secondary">
+                                    <td colspan="3" class="text-end"><strong>Umumiy summa:</strong></td>
+                                    <td><strong id="nasiyaCartTotal">0 UZS</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-success" onclick="confirmNasiyaSale()">
+                        <i class="fas fa-check"></i> Nasiyani tasdiqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi nasiya to'lov qo'shish uchun -->
+    <div class="modal fade" id="nasiyaPaymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white">
+                    <h5 class="modal-title"><i class="fas fa-money-bill-wave"></i> Nasiya to'lov qabul qilish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="paymentNasiyaClientId">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Mijoz</label>
+                        <input type="text" class="form-control" id="paymentNasiyaClientName" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Joriy qarz</label>
+                        <div class="alert alert-danger py-2">
+                            <i class="fas fa-coins me-2"></i>
+                            <span id="paymentNasiyaRemainingDebt">0</span> UZS
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">To'lov miqdori (UZS) *</label>
+                        <input type="number" class="form-control" id="paymentNasiyaAmount" min="0" step="1000" required>
+                        <small class="text-muted">Har qanday miqdorni kiriting, qarzdan ortiq bo'lmasin</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">To'lov sanasi *</label>
+                        <input type="date" class="form-control" id="paymentNasiyaDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">To'lov usuli</label>
+                        <select class="form-select" id="paymentNasiyaMethod">
+                            <option value="cash">Naqd</option>
+                            <option value="card">Karta</option>
+                            <option value="transfer">O'tkazma</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Izoh</label>
+                        <textarea class="form-control" id="paymentNasiyaDescription" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-success" onclick="processNasiyaPayment()">
+                        <i class="fas fa-check"></i> To'lovni tasdiqlash
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal oynasi nasiya mijoz ma'lumotlari va PDF yaratish -->
+    <div class="modal fade" id="nasiyaClientDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header gradient-bg text-white d-flex justify-content-between align-items-center">
+                    <h5 class="modal-title"><i class="fas fa-user-circle"></i> Mijoz ma'lumotlari va mahsulotlar tarixi</h5>
+                    <div>
+                        <button type="button" class="btn btn-warning btn-sm me-2" onclick="generateNasiyaClientPDF()">
+                            <i class="fas fa-file-pdf"></i> PDF yaratish
+                        </button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="nasiyaClientDetailsContent">
+                        <!-- Здесь будет загружена информация о клиенте и истории продуктов -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="Dokonapp.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('dokon_token');
+            const userData = localStorage.getItem('dokon_user');
+            
+            if (!token || !userData) {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            const savedPeriod = localStorage.getItem('dokon_period');
+            if (savedPeriod) {
+                try {
+                    DokonApp.currentPeriod = JSON.parse(savedPeriod);
+                } catch (e) {
+                    console.error('Davr ma\'lumotlarini olishda xatolik:', e);
+                }
+            }
+            
+            document.getElementById('saleQuantity')?.addEventListener('input', updateSaleTotal);
+            document.getElementById('salePrice')?.addEventListener('input', updateSaleTotal);
+            
+            const today = new Date().toISOString().split('T')[0];
+            ['warehouseAkitoyDate', 'saleDate', 'invoiceDate', 'paymentDate', 'refundDate', 'bulkWarehouseDate'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = today;
+            });
+            
+            const nasiyaDate = document.getElementById('nasiyaPaymentDate');
+            if (nasiyaDate) nasiyaDate.value = today;
+            
+            if (window.location.pathname.includes('dokon.html') || 
+                window.location.pathname === '/' || 
+                window.location.pathname.endsWith('/')) {
+                initializeApp();
+            }
+            
+            document.querySelectorAll('a[data-bs-toggle="tab"]').forEach(tab => {
+                tab.addEventListener('shown.bs.tab', function(event) {
+                    if (event.target.getAttribute('href') === '#nasiya') {
+                        updateNasiyaStatistics();
+                        renderNasiyaClientsTable();
+                        renderNasiyaRemindersTable();
+                    }
+                    if (event.target.getAttribute('href') === '#refund') {
+                        if (typeof initRefundTab === 'function') {
+                            initRefundTab();
+                        }
+                    }
+                    if (event.target.getAttribute('href') === '#bulk-warehouse') {
+                        if (typeof changeBulkWarehouseType === 'function') {
+                            if (!bulkWarehouseType) bulkWarehouseType = 'akitoy';
+                            changeBulkWarehouseType(bulkWarehouseType);
+                        }
+                    }
+                    if (event.target.getAttribute('href') === '#warehouse') {
+                        if (typeof initWarehouseAutocomplete === 'function') {
+                            initWarehouseAutocomplete('warehouseAkitoyProductSearch', 'warehouseAkitoyProductId', 'warehouseAkitoySuggestions', 'akitoy');
+                        }
+                    }
+                    if (event.target.getAttribute('href') === '#invoice') {
+                        if (typeof setupInvoiceProductAutocomplete === 'function') {
+                            setupInvoiceProductAutocomplete();
+                        }
+                        if (document.querySelectorAll('#invoiceItemsBody tr').length === 0) {
+                            addInvoiceRow();
+                        }
+                    }
+                });
+            });
+            
+            setInterval(checkNasiyaReminders, 300000);
+        });
+        
+        function getRoleText(role) {
+            switch(role) {
+                case 'superadmin': return 'Super Administrator';
+                case 'admin': return 'Administrator';
+                case 'seller': return 'Sotuvchi';
+                case 'warehouse': return 'Omborchi';
+                default: return 'Administrator';
+            }
+        }
+        
+        function getRoleClass(role) {
+            switch(role) {
+                case 'superadmin': return 'role-superadmin';
+                case 'admin': return 'role-admin';
+                case 'seller': return 'role-seller';
+                case 'warehouse': return 'role-warehouse';
+                default: return 'role-admin';
+            }
+        }
+        
+        function updateUIByRole(role) {
+            const tabs = document.querySelectorAll('#mainTabs .nav-link');
+            const addButtons = document.querySelectorAll('.btn-success[onclick*="showAddProductModal"]');
+            const clearReportsBtn = document.getElementById('clearReportsBtn');
+            const fullMonthResetBtn = document.getElementById('fullMonthResetBtn');
+            const addUserBtn = document.getElementById('addUserBtn');
+            const sendRemindersBtn = document.getElementById('sendRemindersBtn');
+            
+            if (clearReportsBtn) {
+                clearReportsBtn.classList.toggle('d-none', role !== 'superadmin');
+            }
+            
+            if (fullMonthResetBtn) {
+                fullMonthResetBtn.classList.toggle('d-none', role !== 'superadmin');
+            }
+            
+            if (addUserBtn) {
+                addUserBtn.classList.toggle('d-none', !['admin', 'superadmin'].includes(role));
+            }
+            
+            if (sendRemindersBtn) {
+                sendRemindersBtn.classList.toggle('d-none', role === 'warehouse');
+            }
+            
+            switch(role) {
+                case 'superadmin':
+                case 'admin':
+                    tabs.forEach(tab => tab.parentElement.style.display = '');
+                    addButtons.forEach(btn => btn.style.display = '');
+                    break;
+                    
+                case 'seller':
+                    tabs.forEach(tab => {
+                        const href = tab.getAttribute('href');
+                        if (href === '#warehouse' || href === '#users') {
+                            tab.parentElement.style.display = 'none';
+                        } else {
+                            tab.parentElement.style.display = '';
+                        }
+                    });
+                    addButtons.forEach(btn => btn.style.display = 'none');
+                    break;
+                    
+                case 'warehouse':
+                    tabs.forEach(tab => {
+                        const href = tab.getAttribute('href');
+                        if (href === '#warehouse' || href === '#reports') {
+                            tab.parentElement.style.display = '';
+                        } else {
+                            tab.parentElement.style.display = 'none';
+                        }
+                    });
+                    addButtons.forEach(btn => btn.style.display = 'none');
+                    
+                    setTimeout(() => {
+                        document.querySelector('a[href="#warehouse"]').click();
+                    }, 100);
+                    break;
+            }
+            
+            const bulkTab = document.querySelector('a[href="#bulk-warehouse"]')?.parentElement;
+            if (bulkTab) {
+                bulkTab.style.display = (role === 'admin' || role === 'superadmin' || role === 'warehouse') ? 'block' : 'none';
+            }
+            const refundTab = document.querySelector('.refund-tab');
+            if (refundTab) {
+                refundTab.style.display = (role === 'seller' || role === 'admin' || role === 'superadmin') ? 'block' : 'none';
+            }
+        }
+        
+        function showSuccess(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast align-items-center text-bg-success position-fixed top-0 end-0 m-3';
+            toast.style.zIndex = '9999';
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ✅ ${message}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+        
+        function showError(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast align-items-center text-bg-danger position-fixed top-0 end-0 m-3';
+            toast.style.zIndex = '9999';
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">
+                        ❌ ${message}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 5000);
+        }
+        
+        function updatePaymentDebtInfo() {
+            const type = document.getElementById('paymentType').value;
+            const currentDebt = DokonApp.warehouseData.currentDebt || 0;
+            document.getElementById('currentDebtAmount').textContent = currentDebt.toLocaleString('uz-UZ') + ' UZS';
+        }
+        
+        function showPaymentModalForType(type) {
+            document.getElementById('paymentType').value = type;
+            document.getElementById('paymentAmount').value = '';
+            document.getElementById('paymentDate').value = new Date().toISOString().split('T')[0];
+            document.getElementById('paymentDescription').value = '';
+            updatePaymentDebtInfo();
+            
+            const modal = new bootstrap.Modal(document.getElementById('paymentModal'));
+            modal.show();
+        }
+        
+        function testReports() {
+            alert('Hisobotlarni test qilish...\n\n' +
+                  '1. Super administrator: ' + (localStorage.getItem('dokon_user') ? 'OK' : 'Yo\'q') + '\n' +
+                  '2. showFullReport funksiyasi: ' + (typeof showFullReport) + '\n' +
+                  '3. Hisobot modal oynasi: ' + (document.getElementById('reportModal') ? 'Topildi' : 'Topilmadi'));
+            
+            const modal = new bootstrap.Modal(document.getElementById('reportModal'));
+            modal.show();
+        }
+        
+        function confirmFullMonthReset() {
+            const userData = localStorage.getItem('dokon_user');
+            if (!userData) {
+                showError('Avtorizatsiya talab qilinadi!');
+                return;
+            }
+            
+            const user = JSON.parse(userData);
+            if (user.role !== 'superadmin') {
+                showError('Faqat super administrator oy hisobotini tozalashi mumkin!');
+                return;
+            }
+            
+            const monthNames = [
+                'Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun',
+                'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr'
+            ];
+            
+            let currentPeriod = { month: 0, year: 2024 };
+            try {
+                const periodData = localStorage.getItem('dokon_period');
+                if (periodData) {
+                    currentPeriod = JSON.parse(periodData);
+                }
+            } catch (e) {
+                console.error('Davr ma\'lumotlarini olishda xatolik:', e);
+            }
+            
+            const currentMonth = monthNames[currentPeriod.month];
+            const currentYear = currentPeriod.year;
+            
+            const message = `⚠️ DIQQAT! Quyidagi amalni bajarishni tasdiqlaysizmi?\n\n${currentMonth} ${currentYear} oyi uchun:\n\n• Barcha sotuvlar o'chiriladi\n• Barcha hisob-fakturalar o'chiriladi\n• Barcha operatsiya loglari o'chiriladi\n• Ombordagi barcha mahsulotlar miqdori nolga tushiriladi\n• Ombordagi qiymat nolga tushiriladi\n• Statistika to'liq nolga tushiriladi\n\nBu amalni qaytarib bo'lmaydi!\n\nTasdiqlash uchun parolni kiriting (super123):`;
+            
+            const password = prompt(message);
+            
+            if (password === null) {
+                return;
+            }
+            
+            if (password === 'super123') {
+                fullMonthReset(currentPeriod.month, currentPeriod.year);
+            } else {
+                showError('Noto\'g\'ri parol! Amal bekor qilindi.');
+            }
+        }
+        
+        async function fullMonthReset(month, year) {
+            try {
+                let sales = [];
+                let warehouseLogs = [];
+                let invoices = [];
+                
+                try {
+                    const salesData = localStorage.getItem('dokon_sales');
+                    const warehouseData = localStorage.getItem('dokon_warehouse_logs');
+                    const invoicesData = localStorage.getItem('dokon_invoices');
+                    
+                    if (salesData) sales = JSON.parse(salesData);
+                    if (warehouseData) warehouseLogs = JSON.parse(warehouseData);
+                    if (invoicesData) invoices = JSON.parse(invoicesData);
+                } catch (e) {
+                    console.error('Ma\'lumotlarni olishda xatolik:', e);
+                }
+                
+                const monthSales = sales.filter(sale => {
+                    const saleDate = new Date(sale.date);
+                    return saleDate.getMonth() === month && 
+                           saleDate.getFullYear() === year;
+                });
+                
+                const deletedSalesCount = monthSales.length;
+                
+                const monthInvoices = invoices.filter(invoice => {
+                    const invoiceDate = new Date(invoice.date);
+                    return invoiceDate.getMonth() === month && 
+                           invoiceDate.getFullYear() === year;
+                });
+                
+                const deletedInvoicesCount = monthInvoices.length;
+                
+                let products = [];
+                try {
+                    const productsData = localStorage.getItem('dokon_products');
+                    if (productsData) products = JSON.parse(productsData);
+                    
+                    products.forEach(product => {
+                        product.stock = 0;
+                        product.lastSaleDate = null;
+                    });
+                } catch (e) {
+                    console.error('Mahsulotlarni yangilashda xatolik:', e);
+                }
+                
+                const filteredSales = sales.filter(sale => {
+                    const saleDate = new Date(sale.date);
+                    return !(saleDate.getMonth() === month && 
+                            saleDate.getFullYear() === year);
+                });
+                
+                const filteredInvoices = invoices.filter(invoice => {
+                    const invoiceDate = new Date(invoice.date);
+                    return !(invoiceDate.getMonth() === month && 
+                            invoiceDate.getFullYear() === year);
+                });
+                
+                const warehouseValue = 0;
+                
+                localStorage.setItem('dokon_sales', JSON.stringify(filteredSales));
+                localStorage.setItem('dokon_invoices', JSON.stringify(filteredInvoices));
+                localStorage.setItem('dokon_products', JSON.stringify(products));
+                localStorage.setItem('dokon_warehouse_value', JSON.stringify(warehouseValue));
+                
+                if (typeof initializeApp === 'function') {
+                    initializeApp();
+                }
+                
+                const monthNames = [
+                    'Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun',
+                    'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr'
+                ];
+                
+                const reportHTML = `
+                    <div class="alert alert-success">
+                        <h5><i class="fas fa-check-circle"></i> Oy hisoboti to'liq tozalandi!</h5>
+                        <hr>
+                        <p><strong>${monthNames[month]} ${year} oyi uchun tozalangan ma'lumotlar:</strong></p>
+                        <ul>
+                            <li>Sotuvlar: ${deletedSalesCount} ta</li>
+                            <li>Hisob-fakturalar: ${deletedInvoicesCount} ta</li>
+                            <li>Barcha mahsulotlar qoldiqlari (nolga tushirildi)</li>
+                            <li>Ombordagi qiymat (nolga tushirildi)</li>
+                        </ul>
+                        <p class="mb-0"><em>Barcha ma'lumotlar muvaffaqiyatli tozalandi!</em></p>
+                    </div>
+                `;
+                
+                const reportModal = new bootstrap.Modal(document.getElementById('reportModal'));
+                document.getElementById('reportModalTitle').textContent = 'Oy hisoboti to\'liq tozalash natijasi';
+                document.getElementById('reportStats').innerHTML = reportHTML;
+                document.getElementById('reportTable').innerHTML = '';
+                
+                const chartCanvas = document.getElementById('reportChart');
+                if (chartCanvas) {
+                    chartCanvas.style.display = 'none';
+                }
+                
+                reportModal.show();
+                
+                showSuccess(`${monthNames[month]} ${year} oyi hisoboti to'liq tozalandi!`);
+                
+            } catch (error) {
+                console.error('Oy hisobotini tozalashda xatolik:', error);
+                showError('Oy hisobotini tozalashda xatolik yuz berdi: ' + error.message);
+            }
+        }
+        
+        function showServerError(title, message) {
+            document.getElementById('errorTitle').textContent = title;
+            document.getElementById('errorMessage').textContent = message;
+            document.getElementById('errorDisplay').style.display = 'block';
+            
+            setTimeout(() => {
+                document.getElementById('errorDisplay').style.display = 'none';
+            }, 10000);
+        }
+        
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.keyCode === 123 ||
+                (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) ||
+                (e.ctrlKey && e.key === 'U')
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        function updateProgressBars() {
+            const revenueElem = document.getElementById('akitoyRevenue');
+            const profitElem = document.getElementById('akitoyProfit');
+            
+            if (!revenueElem || !profitElem) return;
+            
+            function extractNumber(text) {
+                return parseInt(text.replace(/\s/g, '').replace('UZS', '').trim()) || 0;
+            }
+            
+            const revenue = extractNumber(revenueElem.innerText);
+            const profit = extractNumber(profitElem.innerText);
+            
+            const max = Math.max(revenue, profit, 1);
+            
+            const revenueCard = revenueElem.closest('.stat-card');
+            if (revenueCard) {
+                const revenueBar = revenueCard.querySelector('.progress-bar');
+                if (revenueBar) {
+                    revenueBar.style.width = (revenue / max * 100) + '%';
+                }
+            }
+            
+            const profitCard = profitElem.closest('.stat-card');
+            if (profitCard) {
+                const profitBar = profitCard.querySelector('.progress-bar');
+                if (profitBar) {
+                    profitBar.style.width = (profit / max * 100) + '%';
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', updateProgressBars);
+    </script>
+</body>
+</html>

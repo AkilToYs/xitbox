@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Диагностика сервера</title>
+</head>
+<body>
+    <h1>Диагностика сервера DOKON</h1>
+    <button onclick="runTests()">Запустить тесты</button>
+    <div id="results"></div>
+    
+    <script>
+    async function runTests() {
+        const results = [];
+        
+        // Тест 1: Проверка здоровья сервера
+        try {
+            const healthRes = await fetch('/api/health');
+            const healthData = await healthRes.json();
+            results.push(`✅ Health check: ${JSON.stringify(healthData)}`);
+        } catch (e) {
+            results.push(`❌ Health check failed: ${e.message}`);
+        }
+        
+        // Тест 2: Проверка аутентификации
+        try {
+            const token = localStorage.getItem('dokon_token');
+            if (!token) {
+                results.push('❌ No token found');
+            } else {
+                results.push(`✅ Token exists (length: ${token.length})`);
+                
+                // Проверка токена
+                const verifyRes = await fetch('/api/auth/verify', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                const verifyData = await verifyRes.json();
+                results.push(`✅ Token verify: ${JSON.stringify(verifyData)}`);
+            }
+        } catch (e) {
+            results.push(`❌ Auth test failed: ${e.message}`);
+        }
+        
+        // Тест 3: Проверка прав доступа
+        try {
+            const userData = localStorage.getItem('dokon_user');
+            if (userData) {
+                const user = JSON.parse(userData);
+                results.push(`✅ User role: ${user.role}`);
+            }
+        } catch (e) {
+            results.push(`❌ User data error: ${e.message}`);
+        }
+        
+        // Вывод результатов
+        document.getElementById('results').innerHTML = 
+            '<h3>Результаты:</h3>' + 
+            results.map(r => `<div>${r}</div>`).join('');
+    }
+    
+    // Запустить тесты при загрузке
+    window.onload = runTests;
+    </script>
+</body>
+</html>

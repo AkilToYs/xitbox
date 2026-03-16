@@ -1,0 +1,7 @@
+# public/robots.txt
+User-agent: *
+Disallow: /
+Allow: /login.html
+Allow: /dokon.html
+
+Sitemap: https://dokon-server-pv7d.onrender.com//sitemap.xml
