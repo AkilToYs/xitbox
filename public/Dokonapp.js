@@ -1981,43 +1981,131 @@ function renderWarehouseLogs() {
     akContainer.innerHTML = akHTML;
 }
 
+/**
+ * Рендерит список последних продаж.
+ * На десктопе (ширина > 768px) отображается таблица.
+ * На мобильных устройствах (ширина ≤ 768px) каждая продажа показывается в виде карточки.
+ */
 function renderSalesTable() {
     const container = document.getElementById('recentOperations');
     if (!container) return;
 
     const allSales = DokonApp.sales || [];
+    // Сортируем от новых к старым
     allSales.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
 
+    // Проверяем ширину экрана для выбора представления
+    const isMobile = window.innerWidth <= 768;
+
     if (allSales.length === 0) {
+        // Если продаж нет, показываем заглушку (единую для обоих вариантов)
         container.innerHTML = `
-            <tr>
-                <td colspan="7" class="text-center py-5 text-muted">
-                    <i class="fas fa-history fa-2x mb-3 d-block"></i>
-                    Hozircha sotuvlar yo'q
-                </td>
-            </tr>
+            <div class="text-center py-5 text-muted">
+                <i class="fas fa-history fa-2x mb-3 d-block"></i>
+                <p>Hozircha sotuvlar yo'q</p>
+            </div>
         `;
         return;
     }
 
-    const rows = allSales.map(sale => {
-        const saleDate = sale.date ? new Date(sale.date) : null;
-        const dateStr = saleDate ? saleDate.toLocaleDateString('uz-UZ') : '';
+    if (isMobile) {
+        // Мобильная версия – карточки
+        const cards = allSales.map(sale => {
+            const saleDate = sale.date ? new Date(sale.date).toLocaleDateString('uz-UZ') : '';
 
-        return `
-            <tr>
-                <td data-label="Sana"><small>${dateStr}</small></td>
-                <td data-label="Mahsulot"><strong>${escapeHtml(sale.productName || 'Noma\'lum')}</strong></td>
-                <td data-label="Turi"><span class="badge bg-primary">Akil Home</span></td>
-                <td data-label="Miqdor"><span class="badge bg-secondary">${sale.quantity || 0} dona</span></td>
-                <td data-label="Narx">${(sale.price || 0).toLocaleString('uz-UZ')} UZS</td>
-                <td data-label="Jami"><strong>${(sale.total || 0).toLocaleString('uz-UZ')} UZS</strong></td>
-                <td data-label="Foyda" class="${sale.profit > 0 ? 'text-success' : 'text-danger'}"><strong>${(sale.profit || 0).toLocaleString('uz-UZ')} UZS</strong></td>
-            </tr>
+            // Форматирование чисел
+            const price = (sale.price || 0).toLocaleString('uz-UZ');
+            const total = (sale.total || 0).toLocaleString('uz-UZ');
+            const profit = (sale.profit || 0).toLocaleString('uz-UZ');
+            const profitClass = sale.profit > 0 ? 'text-success' : 'text-danger';
+
+            // Определяем тип (всегда Akil Box, но можно использовать sale.productType)
+            const typeLabel = 'Akil Box';
+            const typeClass = 'bg-primary';
+
+            return `
+                <div class="sale-card">
+                    <div class="header">
+                        <strong>${escapeHtml(sale.productName || 'Noma\'lum')}</strong>
+                        <span class="badge ${typeClass}">${typeLabel}</span>
+                    </div>
+                    <div class="details">
+                        <div><i class="fas fa-calendar-alt me-1"></i> Sana:</div>
+                        <div>${saleDate}</div>
+
+                        <div><i class="fas fa-box me-1"></i> Miqdor:</div>
+                        <div>${sale.quantity || 0} dona</div>
+
+                        <div><i class="fas fa-tag me-1"></i> Narx:</div>
+                        <div>${price} UZS</div>
+
+                        <div><i class="fas fa-calculator me-1"></i> Jami:</div>
+                        <div><strong>${total} UZS</strong></div>
+
+                        <div><i class="fas fa-chart-line me-1"></i> Foyda:</div>
+                        <div class="${profitClass}"><strong>${profit} UZS</strong></div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        container.innerHTML = cards;
+    } else {
+        // Десктопная версия – таблица
+        const rows = allSales.map(sale => {
+            const saleDate = sale.date ? new Date(sale.date).toLocaleDateString('uz-UZ') : '';
+            const price = (sale.price || 0).toLocaleString('uz-UZ');
+            const total = (sale.total || 0).toLocaleString('uz-UZ');
+            const profit = (sale.profit || 0).toLocaleString('uz-UZ');
+            const profitClass = sale.profit > 0 ? 'text-success' : 'text-danger';
+
+            return `
+                <tr>
+                    <td><small>${saleDate}</small></td>
+                    <td><strong>${escapeHtml(sale.productName || 'Noma\'lum')}</strong></td>
+                    <td><span class="badge bg-primary">Akil Box</span></td>
+                    <td><span class="badge bg-secondary">${sale.quantity || 0} dona</span></td>
+                    <td>${price} UZS</td>
+                    <td><strong>${total} UZS</strong></td>
+                    <td class="${profitClass}"><strong>${profit} UZS</strong></td>
+                </tr>
+            `;
+        }).join('');
+
+        container.innerHTML = `
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Sana</th>
+                            <th>Mahsulot</th>
+                            <th>Turi</th>
+                            <th>Miqdor</th>
+                            <th>Narx</th>
+                            <th>Jami</th>
+                            <th>Foyda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rows}
+                    </tbody>
+                </table>
+            </div>
         `;
-    }).join('');
+    }
+}
 
-    container.innerHTML = rows;
+/**
+ * Вспомогательная функция для экранирования HTML-спецсимволов.
+ */
+function escapeHtml(unsafe) {
+    if (!unsafe) return '';
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 function renderUsersTable() {
