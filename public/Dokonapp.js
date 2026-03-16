@@ -673,7 +673,7 @@ function resetNasiyaSearch() {
     renderNasiyaClientsTable();
 }
 
-// Функция добавления на склад (только Akil Box)
+// Функция добавления на склад (только Akil Home)
 async function addToWarehouse(type) {
     const hiddenId = 'warehouseAkitoyProductId';
     const quantityId = 'warehouseAkitoyQuantity';
@@ -750,7 +750,7 @@ async function addToWarehouse(type) {
     }
 }
 
-// Функции для платежей (только Akil Box)
+// Функции для платежей (только Akil Home)
 async function addWarehousePayment() {
     const type = document.getElementById('paymentType').value;
     const amount = parseFloat(document.getElementById('paymentAmount').value);
@@ -782,7 +782,7 @@ async function addWarehousePayment() {
                 method: 'POST',
                 body: {
                     action: 'payment_create',
-                    details: `Akil Box uchun to'lov: ${amount} UZS`,
+                    details: `Akil Home uchun to'lov: ${amount} UZS`,
                     entityId: response.payment.id,
                     entityType: 'payment'
                 }
@@ -1341,7 +1341,7 @@ async function generateInvoicePDF(customer, phone, date, items) {
 
     doc.setFontSize(22);
     doc.setTextColor(40, 167, 69);
-    doc.text('Akil Box', 55, 25);
+    doc.text('Akil Home', 55, 25);
 
     doc.setFontSize(18);
     doc.setTextColor(0, 0, 0);
@@ -1401,7 +1401,7 @@ async function generateInvoicePDF(customer, phone, date, items) {
 
     doc.setFontSize(8);
     doc.setTextColor(150, 150, 150);
-    doc.text('Akil Box - O\'yinchoqlar do\'koni', 15, 280);
+    doc.text('Akil Home - O\'yinchoqlar do\'koni', 15, 280);
     doc.text('Tel1: +998 98 302 77 76 | Tel2: +998 77 302 77 66', 15, 285);
     doc.text(new Date().toLocaleDateString('uz-UZ'), 15, 290);
 
@@ -1488,7 +1488,7 @@ function showFullReport() {
                                         <td><small>${dateStr}</small></td>
                                         <td>
                                             <div class="fw-semibold">${sale.productName}</div>
-                                            <small class="text-muted">Akil Box</small>
+                                            <small class="text-muted">Akil Home</small>
                                         </td>
                                         <td class="text-center">${sale.quantity}</td>
                                         <td class="report-number">${(sale.price || 0).toLocaleString('uz-UZ')}</td>
@@ -1555,7 +1555,7 @@ function showProfitReport() {
             <div class="report-stat-grid">
                 <div class="report-stat-item" style="border-left-color: #4361ee;">
                     <div class="stat-label text-primary fw-bold">
-                        <i class="fas fa-robot me-2"></i>Akil Box
+                        <i class="fas fa-robot me-2"></i>Akil Home
                     </div>
                     <div class="mt-3">
                         <div class="d-flex justify-content-between mb-2">
@@ -1712,7 +1712,7 @@ function showWarehouseReport() {
             <div class="report-stat-grid">
                 <div class="report-stat-item">
                     <div class="stat-label text-primary fw-bold">
-                        <i class="fas fa-robot me-2"></i>Akil Box
+                        <i class="fas fa-robot me-2"></i>Akil Home
                     </div>
                     <div class="mt-3">
                         <div class="d-flex justify-content-between mb-2">
@@ -1788,7 +1788,7 @@ function showWarehouseReport() {
             window.warehouseChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Akil Box'],
+                    labels: ['Akil Home'],
                     datasets: [
                         {
                             label: 'Xaridlar (UZS)',
@@ -2008,7 +2008,7 @@ function renderSalesTable() {
             <tr>
                 <td data-label="Sana"><small>${dateStr}</small></td>
                 <td data-label="Mahsulot"><strong>${escapeHtml(sale.productName || 'Noma\'lum')}</strong></td>
-                <td data-label="Turi"><span class="badge bg-primary">Akil Box</span></td>
+                <td data-label="Turi"><span class="badge bg-primary">Akil Home</span></td>
                 <td data-label="Miqdor"><span class="badge bg-secondary">${sale.quantity || 0} dona</span></td>
                 <td data-label="Narx">${(sale.price || 0).toLocaleString('uz-UZ')} UZS</td>
                 <td data-label="Jami"><strong>${(sale.total || 0).toLocaleString('uz-UZ')} UZS</strong></td>
@@ -2610,8 +2610,8 @@ function generateReportPDF() {
         <body>
             <div class="header">
                 <div class="logo-container">
-                    <img src="/Akiltoys.png" alt="Akil Box Logo" class="logo">
-                    <div class="company-name">Akil Box - O'yinchoqlar do'koni</div>
+                    <img src="/Akiltoys.png" alt="Akil Home Logo" class="logo">
+                    <div class="company-name">Akil Home - O'yinchoqlar do'koni</div>
                 </div>
                 <div class="report-title">${reportTitle}</div>
                 <div class="report-date">
@@ -2623,8 +2623,8 @@ function generateReportPDF() {
             <div>${reportContent}</div>
             
             <div class="footer">
-                <p>Akil Box - O'yinchoqlar do'koni boshqaruvi</p>
-                <p>${new Date().getFullYear()} © Akil Box</p>
+                <p>Akil Home - O'yinchoqlar do'koni boshqaruvi</p>
+                <p>${new Date().getFullYear()} © Akil Home</p>
             </div>
         </body>
         </html>
@@ -3843,7 +3843,7 @@ function checkDebtNotifications() {
         if (!notificationExists) {
             createNotification(
                 'Katta qarzdorlik!',
-                `Akil Box uchun qarzdorlik ${debt.toLocaleString('uz-UZ')} UZS. To'lov qilishni unutmang!`,
+                `Akil Home uchun qarzdorlik ${debt.toLocaleString('uz-UZ')} UZS. To'lov qilishni unutmang!`,
                 'payment',
                 'high',
                 'goto_warehouse',
@@ -4734,7 +4734,7 @@ async function showNasiyaClientDetails(clientId) {
                                                 <tr>
                                                     <td>${index + 1}</td>
                                                     <td>${new Date(product.saleDate).toLocaleDateString('uz-UZ')}</td>
-                                                    <td><strong>${escapeHtml(product.productName)}</strong>${product.type ? `<br><small class="text-muted">${product.type === 'akitoy' ? 'Akil Box' : ''}</small>` : ''}</td>
+                                                    <td><strong>${escapeHtml(product.productName)}</strong>${product.type ? `<br><small class="text-muted">${product.type === 'akitoy' ? 'Akil Home' : ''}</small>` : ''}</td>
                                                     <td>${product.quantity}</td>
                                                     <td>${(product.price || 0).toLocaleString('uz-UZ')}</td>
                                                     <td class="fw-bold">${(product.total || 0).toLocaleString('uz-UZ')}</td>
@@ -4966,8 +4966,8 @@ function generateNasiyaClientPDF() {
         <body>
             <div class="header">
                 <div class="logo-container">
-                    <img src="/Akiltoys.png" alt="Akil Box Logo" class="logo">
-                    <div class="company-name">Akil Box - Nasiya hisoboti</div>
+                    <img src="/Akiltoys.png" alt="Akil Home Logo" class="logo">
+                    <div class="company-name">Akil Home - Nasiya hisoboti</div>
                 </div>
                 <div class="report-title">${client.name} - Nasiya olingan mahsulotlar hisoboti</div>
                 <div class="report-date">
@@ -5076,9 +5076,9 @@ function generateNasiyaClientPDF() {
             ` : '<p class="text-center">To\'lovlar tarixi yo\'q</p>'}
             
             <div class="footer">
-                <p>Akil Box - O'yinchoqlar do'koni boshqaruvi</p>
+                <p>Akil Home - O'yinchoqlar do'koni boshqaruvi</p>
                 <p>Tel: +998 98 302 77 76 | +998 77 302 77 76</p>
-                <p>${new Date().getFullYear()} © Akil Box Do'kon tizimi</p>
+                <p>${new Date().getFullYear()} © Akil Home Do'kon tizimi</p>
             </div>
         </body>
         </html>
@@ -5425,7 +5425,7 @@ function hideLoading() {
 function changeBulkWarehouseType(type) {
     currentBulkType = type;
     const title = document.getElementById('bulkWarehouseTypeTitle');
-    title.innerHTML = '<i class="fas fa-robot me-2"></i>Akil Box - Ommaviy qabul';
+    title.innerHTML = '<i class="fas fa-robot me-2"></i>Akil Home - Ommaviy qabul';
     
     document.getElementById('bulkWarehouseItems').innerHTML = '';
     addBulkWarehouseRow();
@@ -5818,7 +5818,7 @@ function initRefundAutocomplete() {
         currentItems = matches;
         suggestions.innerHTML = matches.map(p =>
             `<div class="suggestion-item p-2 border-bottom" data-id="${p.id}" data-name="${p.name}" data-price="${p.price || 0}" data-cost="${p.cost || 0}">
-                ${p.name} (${p.article || 'artikulsiz'}) – Akil Box
+                ${p.name} (${p.article || 'artikulsiz'}) – Akil Home
             </div>`
         ).join('');
         suggestions.style.display = 'block';
@@ -6070,7 +6070,7 @@ function attachRefundRowEvents(rowId) {
         currentItems = matches;
         suggestionsDiv.innerHTML = matches.map(p =>
             `<div class="suggestion-item p-2 border-bottom" data-id="${p.id}" data-name="${p.name}" data-price="${p.price || 0}" data-cost="${p.cost || 0}">
-                ${p.name} (${p.article || 'artikulsiz'}) – Akil Box
+                ${p.name} (${p.article || 'artikulsiz'}) – Akil Home
             </div>`
         ).join('');
         suggestionsDiv.style.display = 'block';
@@ -6312,7 +6312,7 @@ async function generateRefundPDF() {
 
     doc.setFontSize(22);
     doc.setTextColor(255, 193, 7);
-    doc.text('Akil Box', 55, 25);
+    doc.text('Akil Home', 55, 25);
     doc.setFontSize(18);
     doc.setTextColor(0, 0, 0);
     doc.text('MAHSULOT QAYTARISH', 55, 35);
@@ -6374,7 +6374,7 @@ async function generateRefundPDF() {
 
     doc.setFontSize(8);
     doc.setTextColor(150, 150, 150);
-    doc.text('Akil Box - O\'yinchoqlar do\'koni', 15, 280);
+    doc.text('Akil Home - O\'yinchoqlar do\'koni', 15, 280);
     doc.text('Tel: +998 98 302 77 76 | +998 77 302 77 66', 15, 285);
     doc.text(new Date().toLocaleDateString('uz-UZ'), 15, 290);
 
@@ -6689,7 +6689,7 @@ async function saveBulkWarehouseReceive() {
 }
 
 function generateBulkWarehousePDF(items, date, receiptId) {
-    const brandName = 'Akil Box';
+    const brandName = 'Akil Home';
     const totalAmount = items.reduce((sum, i) => sum + i.totalCost, 0);
     const itemCount = items.reduce((sum, i) => sum + i.quantity, 0);
 
@@ -6719,9 +6719,9 @@ function generateBulkWarehousePDF(items, date, receiptId) {
         <body>
             <div class="header">
                 <div class="logo-container">
-                    <img src="/Akiltoys.png" alt="Akil Box Logo" class="logo">
+                    <img src="/Akiltoys.png" alt="Akil Home Logo" class="logo">
                 </div>
-                <div class="company-name">Akil Box</div>
+                <div class="company-name">Akil Home</div>
                 <div class="report-title">OMBORGA QABUL QILISH</div>
                 <div style="margin-top: 10px;">
                     <strong>${brandName}</strong> | Sana: ${date} | № ${receiptId || 'BULK-' + Date.now().toString().slice(-6)}
@@ -6767,7 +6767,7 @@ function generateBulkWarehousePDF(items, date, receiptId) {
             </div>
 
             <div class="footer">
-                <p>Akil Box - o'yinchoqlar do'koni | Tel: +998 98 302 77 76</p>
+                <p>Akil Home - o'yinchoqlar do'koni | Tel: +998 98 302 77 76</p>
                 <p>${new Date().toLocaleDateString('uz-UZ')} ${new Date().toLocaleTimeString('uz-UZ', { hour: '2-digit', minute: '2-digit' })}</p>
             </div>
         </body>
@@ -6869,7 +6869,7 @@ function createProfitAndDebtChart(totalProfit, totalDebt) {
     window.profitAndDebtChart = new Chart(ctx.getContext('2d'), {
         type: 'bar',
         data: {
-            labels: ['Akil Box'],
+            labels: ['Akil Home'],
             datasets: [
                 {
                     label: 'Foyda (UZS)',
